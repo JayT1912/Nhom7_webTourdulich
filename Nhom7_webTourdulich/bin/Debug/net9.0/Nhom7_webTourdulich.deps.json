@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Nhom7_webTourdulich/1.0.0": {
+        "runtime": {
+          "Nhom7_webTourdulich.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Nhom7_webTourdulich/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
