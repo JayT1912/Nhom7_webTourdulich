@@ -4,12 +4,12 @@ using Nhom7_webTourdulich.Models;
 
 namespace Nhom7_webTourdulich.Controllers;
 
-public class AboutController : Controller
+public class ServiceController : Controller
 {
     private readonly QuanLyTourContext _quanLyTour;
-    private readonly ILogger<AboutController> _logger;
+    private readonly ILogger<ServiceController> _logger;
 
-    public AboutController(ILogger<AboutController> logger, QuanLyTourContext quanLyTour)
+    public ServiceController(ILogger<ServiceController> logger, QuanLyTourContext quanLyTour)
     {
         _logger = logger;
         _quanLyTour = quanLyTour;

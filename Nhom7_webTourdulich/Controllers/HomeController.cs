@@ -14,7 +14,6 @@ public class HomeController : Controller
         _logger = logger;
         _quanLyTour = quanLyTour;
     }
-
     public IActionResult Index()
     {
         return View();
