@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Nhom7_webTourdulich")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d0c0cade2f3f91e163107e3a1ee22e9a9577cfeb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+96d735957324aa4aaad3f4a7c0c7f6b266b7b4d7")]
 [assembly: System.Reflection.AssemblyProductAttribute("Nhom7_webTourdulich")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Nhom7_webTourdulich")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
