@@ -51,35 +51,26 @@ public partial class QuanLyTourContext : DbContext
 
     public virtual DbSet<TrangThai> TrangThais { get; set; }
 
-<<<<<<< HEAD
-   
-=======
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=LAPTOP-IGLC6V19;Database=QuanLyTour;Integrated Security=True;Trust Server Certificate=True");
 
->>>>>>> 0f4116f8f5f784e210a9fdb167874b3aa19f78f6
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<AnhTour>(entity =>
         {
-<<<<<<< HEAD
+
             entity.HasKey(e => e.MaAnh).HasName("PK__AnhTour__06C6A463B34BBBC5");
-=======
+
             entity.HasKey(e => e.MaAnh).HasName("PK__AnhTour__06C6A463D59595B2");
->>>>>>> 0f4116f8f5f784e210a9fdb167874b3aa19f78f6
+
 
             entity.ToTable("AnhTour");
 
             entity.Property(e => e.MaAnh).HasColumnName("ma_anh");
-<<<<<<< HEAD
             entity.Property(e => e.HinhAnh).HasColumnName("hinh_anh");
-=======
             entity.Property(e => e.HinhAnh)
                 .HasMaxLength(255)
                 .IsUnicode(false)
                 .HasColumnName("hinh_anh");
->>>>>>> 0f4116f8f5f784e210a9fdb167874b3aa19f78f6
             entity.Property(e => e.LoaiFile)
                 .HasMaxLength(100)
                 .IsUnicode(false)
@@ -97,12 +88,9 @@ public partial class QuanLyTourContext : DbContext
 
         modelBuilder.Entity<ChiTietHoaDon>(entity =>
         {
-<<<<<<< HEAD
-            entity.HasKey(e => new { e.MaHoaDon, e.MaKhachHang }).HasName("PK__ChiTietH__A77ACE4C94EF26FF");
-=======
-            entity.HasKey(e => new { e.MaHoaDon, e.MaKhachHang }).HasName("PK__ChiTietH__A77ACE4C7973237A");
->>>>>>> 0f4116f8f5f784e210a9fdb167874b3aa19f78f6
+           entity.HasKey(e => new { e.MaHoaDon, e.MaKhachHang }).HasName("PK__ChiTietH__A77ACE4C94EF26FF");
 
+            entity.HasKey(e => new { e.MaHoaDon, e.MaKhachHang }).HasName("PK__ChiTietH__A77ACE4C7973237A");
             entity.ToTable("ChiTietHoaDon");
 
             entity.Property(e => e.MaHoaDon)
@@ -137,11 +125,9 @@ public partial class QuanLyTourContext : DbContext
 
         modelBuilder.Entity<ChiTietNhomTour>(entity =>
         {
-<<<<<<< HEAD
             entity.HasKey(e => new { e.MaNhomTour, e.MaNhanVien, e.MaPhuongTien }).HasName("PK__ChiTietN__D6FAF5AC096BD5EE");
-=======
+
             entity.HasKey(e => new { e.MaNhomTour, e.MaNhanVien, e.MaPhuongTien }).HasName("PK__ChiTietN__D6FAF5ACA45EEC89");
->>>>>>> 0f4116f8f5f784e210a9fdb167874b3aa19f78f6
 
             entity.ToTable("ChiTietNhomTour");
 
@@ -176,11 +162,9 @@ public partial class QuanLyTourContext : DbContext
 
         modelBuilder.Entity<ChucVu>(entity =>
         {
-<<<<<<< HEAD
             entity.HasKey(e => e.MaChucVu).HasName("PK__ChucVu__41374AC9D9BA7CF3");
-=======
+
             entity.HasKey(e => e.MaChucVu).HasName("PK__ChucVu__41374AC9CEDA77E2");
->>>>>>> 0f4116f8f5f784e210a9fdb167874b3aa19f78f6
 
             entity.ToTable("ChucVu");
 
@@ -195,11 +179,10 @@ public partial class QuanLyTourContext : DbContext
 
         modelBuilder.Entity<DiemDen>(entity =>
         {
-<<<<<<< HEAD
+
             entity.HasKey(e => e.MaDiemDen).HasName("PK__DiemDen__807E1A34C5AAF8D8");
-=======
+
             entity.HasKey(e => e.MaDiemDen).HasName("PK__DiemDen__807E1A34F688D729");
->>>>>>> 0f4116f8f5f784e210a9fdb167874b3aa19f78f6
 
             entity.ToTable("DiemDen");
 
@@ -217,11 +200,10 @@ public partial class QuanLyTourContext : DbContext
 
         modelBuilder.Entity<GiaTour>(entity =>
         {
-<<<<<<< HEAD
+
             entity.HasKey(e => e.MaGiaTour).HasName("PK__GiaTour__D361D61CC90B737A");
-=======
+
             entity.HasKey(e => e.MaGiaTour).HasName("PK__GiaTour__D361D61CEC5B2EA3");
->>>>>>> 0f4116f8f5f784e210a9fdb167874b3aa19f78f6
 
             entity.ToTable("GiaTour");
 
@@ -245,11 +227,10 @@ public partial class QuanLyTourContext : DbContext
 
         modelBuilder.Entity<HanhKhach>(entity =>
         {
-<<<<<<< HEAD
+
             entity.HasKey(e => new { e.MaKhachHang, e.MaNhomTour }).HasName("PK__HanhKhac__C7AB99E158A11CF4");
-=======
+
             entity.HasKey(e => new { e.MaKhachHang, e.MaNhomTour }).HasName("PK__HanhKhac__C7AB99E14DECD744");
->>>>>>> 0f4116f8f5f784e210a9fdb167874b3aa19f78f6
 
             entity.ToTable("HanhKhach");
 
@@ -284,11 +265,10 @@ public partial class QuanLyTourContext : DbContext
 
         modelBuilder.Entity<HoaDon>(entity =>
         {
-<<<<<<< HEAD
+
             entity.HasKey(e => e.MaHoaDon).HasName("PK__HoaDon__DBE2D9E36E6C6ABB");
-=======
+
             entity.HasKey(e => e.MaHoaDon).HasName("PK__HoaDon__DBE2D9E37AFC20BC");
->>>>>>> 0f4116f8f5f784e210a9fdb167874b3aa19f78f6
 
             entity.ToTable("HoaDon");
 
@@ -330,11 +310,9 @@ public partial class QuanLyTourContext : DbContext
 
         modelBuilder.Entity<KhachHang>(entity =>
         {
-<<<<<<< HEAD
             entity.HasKey(e => e.MaKhachHang).HasName("PK__KhachHan__C9817AF67A0DEADC");
-=======
+
             entity.HasKey(e => e.MaKhachHang).HasName("PK__KhachHan__C9817AF6C994CF68");
->>>>>>> 0f4116f8f5f784e210a9fdb167874b3aa19f78f6
 
             entity.ToTable("KhachHang");
 
@@ -350,11 +328,9 @@ public partial class QuanLyTourContext : DbContext
                 .IsUnicode(false)
                 .HasColumnName("email");
             entity.Property(e => e.GioiTinh)
-<<<<<<< HEAD
                 .HasMaxLength(2)
-=======
+
                 .HasMaxLength(20)
->>>>>>> 0f4116f8f5f784e210a9fdb167874b3aa19f78f6
                 .HasColumnName("gioi_tinh");
             entity.Property(e => e.QuocTich)
                 .HasMaxLength(50)
@@ -370,11 +346,9 @@ public partial class QuanLyTourContext : DbContext
 
         modelBuilder.Entity<KhachSan>(entity =>
         {
-<<<<<<< HEAD
             entity.HasKey(e => e.MaKhachSan).HasName("PK__KhachSan__D39D7708BAECF21B");
-=======
+
             entity.HasKey(e => e.MaKhachSan).HasName("PK__KhachSan__D39D7708D6B71854");
->>>>>>> 0f4116f8f5f784e210a9fdb167874b3aa19f78f6
 
             entity.ToTable("KhachSan");
 
@@ -408,11 +382,9 @@ public partial class QuanLyTourContext : DbContext
 
         modelBuilder.Entity<KhuyenMai>(entity =>
         {
-<<<<<<< HEAD
             entity.HasKey(e => e.MaKhuyenMai).HasName("PK__KhuyenMa__01A88CB3A0F496ED");
-=======
+
             entity.HasKey(e => e.MaKhuyenMai).HasName("PK__KhuyenMa__01A88CB3E8DFB45C");
->>>>>>> 0f4116f8f5f784e210a9fdb167874b3aa19f78f6
 
             entity.ToTable("KhuyenMai");
 
@@ -452,11 +424,9 @@ public partial class QuanLyTourContext : DbContext
 
         modelBuilder.Entity<LoaiHanhKhach>(entity =>
         {
-<<<<<<< HEAD
             entity.HasKey(e => e.MaLoaiKhach).HasName("PK__LoaiHanh__C9C991291CD7E203");
-=======
+
             entity.HasKey(e => e.MaLoaiKhach).HasName("PK__LoaiHanh__C9C9912943645711");
->>>>>>> 0f4116f8f5f784e210a9fdb167874b3aa19f78f6
 
             entity.ToTable("LoaiHanhKhach");
 
@@ -471,11 +441,9 @@ public partial class QuanLyTourContext : DbContext
 
         modelBuilder.Entity<LoaiTour>(entity =>
         {
-<<<<<<< HEAD
             entity.HasKey(e => e.MaLoaiTour).HasName("PK__LoaiTour__CADBC9015872289C");
-=======
+
             entity.HasKey(e => e.MaLoaiTour).HasName("PK__LoaiTour__CADBC901E10025E3");
->>>>>>> 0f4116f8f5f784e210a9fdb167874b3aa19f78f6
 
             entity.ToTable("LoaiTour");
 
@@ -490,11 +458,9 @@ public partial class QuanLyTourContext : DbContext
 
         modelBuilder.Entity<NhanVien>(entity =>
         {
-<<<<<<< HEAD
             entity.HasKey(e => e.MaNhanVien).HasName("PK__NhanVien__6781B7B99BE87490");
-=======
+
             entity.HasKey(e => e.MaNhanVien).HasName("PK__NhanVien__6781B7B9A42FAD2C");
->>>>>>> 0f4116f8f5f784e210a9fdb167874b3aa19f78f6
 
             entity.ToTable("NhanVien");
 
@@ -518,11 +484,9 @@ public partial class QuanLyTourContext : DbContext
 
         modelBuilder.Entity<NhomTour>(entity =>
         {
-<<<<<<< HEAD
             entity.HasKey(e => e.MaNhomTour).HasName("PK__NhomTour__E2AE317118C36550");
-=======
+
             entity.HasKey(e => e.MaNhomTour).HasName("PK__NhomTour__E2AE317102AC642B");
->>>>>>> 0f4116f8f5f784e210a9fdb167874b3aa19f78f6
 
             entity.ToTable("NhomTour");
 
@@ -563,11 +527,9 @@ public partial class QuanLyTourContext : DbContext
 
         modelBuilder.Entity<PhuongTien>(entity =>
         {
-<<<<<<< HEAD
             entity.HasKey(e => e.MaPhuongTien).HasName("PK__PhuongTi__2CDFA6B3ECD0073C");
-=======
+
             entity.HasKey(e => e.MaPhuongTien).HasName("PK__PhuongTi__2CDFA6B304C82800");
->>>>>>> 0f4116f8f5f784e210a9fdb167874b3aa19f78f6
 
             entity.ToTable("PhuongTien");
 
@@ -586,11 +548,9 @@ public partial class QuanLyTourContext : DbContext
 
         modelBuilder.Entity<Tour>(entity =>
         {
-<<<<<<< HEAD
             entity.HasKey(e => e.MaTour).HasName("PK__Tour__1CCF875851108143");
-=======
+
             entity.HasKey(e => e.MaTour).HasName("PK__Tour__1CCF87589BE9F1CC");
->>>>>>> 0f4116f8f5f784e210a9fdb167874b3aa19f78f6
 
             entity.ToTable("Tour");
 
@@ -632,11 +592,9 @@ public partial class QuanLyTourContext : DbContext
 
         modelBuilder.Entity<TrangThai>(entity =>
         {
-<<<<<<< HEAD
             entity.HasKey(e => e.MaTrangThai).HasName("PK__TrangTha__5C69DAA8FB576932");
-=======
+
             entity.HasKey(e => e.MaTrangThai).HasName("PK__TrangTha__5C69DAA82E6D05EA");
->>>>>>> 0f4116f8f5f784e210a9fdb167874b3aa19f78f6
 
             entity.ToTable("TrangThai");
 
