@@ -10,6 +10,4 @@ public partial class PhuongTien
     public string Ten { get; set; } = null!;
 
     public string TrangThai { get; set; } = null!;
-
-    public virtual ICollection<ChiTietNhomTour> ChiTietNhomTours { get; set; } = new List<ChiTietNhomTour>();
 }

@@ -9,17 +9,17 @@ public partial class NhomTour
 
     public string MaTour { get; set; } = null!;
 
-    public string NgayKhoiHanh { get; set; } = null!;
+    public DateOnly NgayKhoiHanh { get; set; }
 
-    public string NgayKetThuc { get; set; } = null!;
+    public DateOnly NgayKetThuc { get; set; }
 
     public string DiemXuatPhat { get; set; } = null!;
 
     public string MaTrangThai { get; set; } = null!;
 
-    public virtual ICollection<ChiTietNhomTour> ChiTietNhomTours { get; set; } = new List<ChiTietNhomTour>();
+    public string? SoLuongNguoi { get; set; }
 
-    public virtual ICollection<HanhKhach> HanhKhaches { get; set; } = new List<HanhKhach>();
+    public string? NoiDung { get; set; }
 
     public virtual ICollection<HoaDon> HoaDons { get; set; } = new List<HoaDon>();
 

@@ -1,8 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using Nhom7_webTourdulich.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<QuanLyTourContext>(options => 
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConet")));

@@ -11,13 +11,13 @@ public partial class KhuyenMai
 
     public string MaGiaTour { get; set; } = null!;
 
-    public string? PhanTramGiam { get; set; }
+    public double? PhanTramGiam { get; set; }
 
     public string? GiaGiam { get; set; }
 
-    public string NgayBatDau { get; set; } = null!;
+    public DateOnly NgayBatDau { get; set; }
 
-    public string NgayKetThuc { get; set; } = null!;
+    public DateOnly NgayKetThuc { get; set; }
 
     public virtual GiaTour MaGiaTourNavigation { get; set; } = null!;
 }

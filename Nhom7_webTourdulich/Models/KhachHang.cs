@@ -19,9 +19,9 @@ public partial class KhachHang
 
     public string QuocTich { get; set; } = null!;
 
-    public virtual ICollection<ChiTietHoaDon> ChiTietHoaDons { get; set; } = new List<ChiTietHoaDon>();
+    public string? HinhAnh { get; set; }
 
-    public virtual ICollection<HanhKhach> HanhKhaches { get; set; } = new List<HanhKhach>();
+    public virtual ICollection<ChiTietHoaDon> ChiTietHoaDons { get; set; } = new List<ChiTietHoaDon>();
 
     public virtual ICollection<HoaDon> HoaDons { get; set; } = new List<HoaDon>();
 }
