@@ -11,7 +11,7 @@ public partial class AnhTour
 
     public string LoaiFile { get; set; } = null!;
 
-    public byte[] HinhAnh { get; set; } = null!;
+    public string HinhAnh { get; set; } = null!;
 
     public virtual Tour MaTourNavigation { get; set; } = null!;
 }
