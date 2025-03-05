@@ -6,11 +6,15 @@ namespace Nhom7_webTourdulich.Controllers;
 
 public class HomeController : Controller
 {
+    private readonly QuanLyTourContext _quanLyTour;
+
+
     private readonly ILogger<HomeController> _logger;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger, QuanLyTourContext quanLyTour)
     {
         _logger = logger;
+        _quanLyTour = quanLyTour;
     }
 
     public IActionResult Index()
