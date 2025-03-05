@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "uOH0K7sOxo2/AOY6NKLx/fWvbFeVAtzcH7ykMoZ5IUs=",
+  "Hash": "pG85wSPnzd31jMAv1HPWQ4VXVmpZwDK29v+LD6Iswuc=",
   "Source": "Nhom7_webTourdulich",
   "BasePath": "_content/Nhom7_webTourdulich",
   "Mode": "Default",
@@ -708,6 +708,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\about.jpg"
+    },
+    {
+      "Identity": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\anhtrangchu.jpg",
+      "SourceId": "Nhom7_webTourdulich",
+      "SourceType": "Discovered",
+      "ContentRoot": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\",
+      "BasePath": "_content/Nhom7_webTourdulich",
+      "RelativePath": "img/anhtrangchu#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "abgjs4zmve",
+      "Integrity": "qkr6RHPJTtnwxVg1e/uLMLNCHuurngckZ5m+PaFUKuM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\anhtrangchu.jpg"
     },
     {
       "Identity": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\bg-hero.jpg",
@@ -2587,6 +2608,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-qzMHQwF1V7u2N7nPJA4lzd9eRHaDYga3fUMA8l2s0NY="
+        }
+      ]
+    },
+    {
+      "Route": "img/anhtrangchu.abgjs4zmve.jpg",
+      "AssetFile": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\anhtrangchu.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1266521"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qkr6RHPJTtnwxVg1e/uLMLNCHuurngckZ5m+PaFUKuM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 08:09:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "abgjs4zmve"
+        },
+        {
+          "Name": "label",
+          "Value": "img/anhtrangchu.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qkr6RHPJTtnwxVg1e/uLMLNCHuurngckZ5m+PaFUKuM="
+        }
+      ]
+    },
+    {
+      "Route": "img/anhtrangchu.jpg",
+      "AssetFile": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\anhtrangchu.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1266521"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qkr6RHPJTtnwxVg1e/uLMLNCHuurngckZ5m+PaFUKuM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 08:09:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qkr6RHPJTtnwxVg1e/uLMLNCHuurngckZ5m+PaFUKuM="
         }
       ]
     },

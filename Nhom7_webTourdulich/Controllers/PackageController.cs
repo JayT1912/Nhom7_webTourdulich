@@ -1,7 +1,7 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Nhom7_webTourdulich.Models;
-
+using Microsoft.EntityFrameworkCore;
 namespace Nhom7_webTourdulich.Controllers;
 
 public class PackageController : Controller
@@ -16,7 +16,13 @@ public class PackageController : Controller
     }
     public IActionResult Index()
     {
-        return View();
+        var tours = _quanLyTour.Tours
+            .Include(t => t.MaGiaTourNavigation)  // Bao gồm thông tin giá tour
+            .Include(t => t.MaLoaiTourNavigation) // Bao gồm thông tin loại tour
+            .Include(t => t.MaDiemDenNavigation) // Bao gồm thông tin điểm đến
+            .ToList();
+
+        return View(tours);  // Trả về view với danh sách các tour
     }
 
     public IActionResult Privacy()

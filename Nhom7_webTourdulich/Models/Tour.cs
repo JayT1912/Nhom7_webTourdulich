@@ -24,7 +24,6 @@ public partial class Tour
     public virtual DiemDen MaDiemDenNavigation { get; set; } = null!;
 
     public virtual GiaTour MaGiaTourNavigation { get; set; } = null!;
-
     public virtual LoaiTour MaLoaiTourNavigation { get; set; } = null!;
 
     public virtual ICollection<NhomTour> NhomTours { get; set; } = new List<NhomTour>();
