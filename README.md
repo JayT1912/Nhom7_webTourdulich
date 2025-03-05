@@ -1,5 +1,9 @@
-<<<<<<< HEAD
 📌 Website quản lý tour
-=======
 📌 Website quản lý tour du lịch
->>>>>>> c3a9d38d2846e8bcb3e2cc791a1a3e66c32bc9bd
+
+
+🚀 Tác giả  
+Lê Tuấn Kiệt - Developer  
+Phạm Lâm Minh Lộc - Developer  
+Nguyễn Thị Thùy Nhung - Developer  
+Phạm Cao Chí Thành - Developer  
