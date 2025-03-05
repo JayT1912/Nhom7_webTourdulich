@@ -15,8 +15,9 @@ public class ServiceController : Controller
         _quanLyTour = quanLyTour;
     }
     public IActionResult Index()
-    {
-        return View();
+    {var tours = _quanLyTour.Tours.ToList();
+            
+        return View(tours);
     }
 
     public IActionResult Privacy()

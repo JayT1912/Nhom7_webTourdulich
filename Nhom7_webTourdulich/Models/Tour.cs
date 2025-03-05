@@ -15,7 +15,11 @@ public partial class Tour
 
     public string MaDiemDen { get; set; } = null!;
 
-    public virtual ICollection<AnhTour> AnhTours { get; set; } = new List<AnhTour>();
+    public int SoNgay { get; set; }
+
+    public string? SoLuongNguoi { get; set; }
+
+    public string? HinhAnh { get; set; }
 
     public virtual DiemDen MaDiemDenNavigation { get; set; } = null!;
 

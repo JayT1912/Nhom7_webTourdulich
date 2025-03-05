@@ -7,11 +7,11 @@ public partial class GiaTour
 {
     public string MaGiaTour { get; set; } = null!;
 
-    public string Gia { get; set; } = null!;
+    public decimal Gia { get; set; }
 
-    public string NgayBatDau { get; set; } = null!;
+    public DateOnly NgayBatDau { get; set; }
 
-    public string NgayKetThuc { get; set; } = null!;
+    public DateOnly NgayKetThuc { get; set; }
 
     public virtual ICollection<KhuyenMai> KhuyenMais { get; set; } = new List<KhuyenMai>();
 

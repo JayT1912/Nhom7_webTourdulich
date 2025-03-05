@@ -9,9 +9,9 @@ public partial class NhanVien
 
     public string Ten { get; set; } = null!;
 
-    public string MaVaiTro { get; set; } = null!;
+    public string MaChucVu { get; set; } = null!;
 
-    public virtual ICollection<ChiTietNhomTour> ChiTietNhomTours { get; set; } = new List<ChiTietNhomTour>();
+    public string? HinhAnh { get; set; }
 
-    public virtual ChucVu MaVaiTroNavigation { get; set; } = null!;
+    public virtual ChucVu MaChucVuNavigation { get; set; } = null!;
 }

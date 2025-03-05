@@ -1,195 +1,195 @@
 {
   "Files": [
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\Nhom7_webTourdulich.bundle.scp.css",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\Nhom7_webTourdulich.bundle.scp.css",
       "PackagePath": "staticwebassets\\Nhom7_webTourdulich.q5687kv8vs.bundle.scp.css"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\css\\bootstrap.min.css",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\css\\style.css",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\favicon.ico",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\about.jpg",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\about.jpg",
       "PackagePath": "staticwebassets\\img\\about.jpg"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\bg-hero.jpg",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\bg-hero.jpg",
       "PackagePath": "staticwebassets\\img\\bg-hero.jpg"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\booking.jpg",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\booking.jpg",
       "PackagePath": "staticwebassets\\img\\booking.jpg"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\destination-1.jpg",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\destination-1.jpg",
       "PackagePath": "staticwebassets\\img\\destination-1.jpg"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\destination-2.jpg",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\destination-2.jpg",
       "PackagePath": "staticwebassets\\img\\destination-2.jpg"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\destination-3.jpg",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\destination-3.jpg",
       "PackagePath": "staticwebassets\\img\\destination-3.jpg"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\destination-4.jpg",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\destination-4.jpg",
       "PackagePath": "staticwebassets\\img\\destination-4.jpg"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\package-1.jpg",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\package-1.jpg",
       "PackagePath": "staticwebassets\\img\\package-1.jpg"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\package-2.jpg",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\package-2.jpg",
       "PackagePath": "staticwebassets\\img\\package-2.jpg"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\package-3.jpg",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\package-3.jpg",
       "PackagePath": "staticwebassets\\img\\package-3.jpg"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\team-1.jpg",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\team-1.jpg",
       "PackagePath": "staticwebassets\\img\\team-1.jpg"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\team-2.jpg",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\team-2.jpg",
       "PackagePath": "staticwebassets\\img\\team-2.jpg"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\team-3.jpg",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\team-3.jpg",
       "PackagePath": "staticwebassets\\img\\team-3.jpg"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\team-4.jpg",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\team-4.jpg",
       "PackagePath": "staticwebassets\\img\\team-4.jpg"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\testimonial-1.jpg",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\testimonial-1.jpg",
       "PackagePath": "staticwebassets\\img\\testimonial-1.jpg"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\testimonial-2.jpg",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\testimonial-2.jpg",
       "PackagePath": "staticwebassets\\img\\testimonial-2.jpg"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\testimonial-3.jpg",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\testimonial-3.jpg",
       "PackagePath": "staticwebassets\\img\\testimonial-3.jpg"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\testimonial-4.jpg",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\testimonial-4.jpg",
       "PackagePath": "staticwebassets\\img\\testimonial-4.jpg"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\js\\main.js",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\js\\main.js",
       "PackagePath": "staticwebassets\\js\\main.js"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\animate\\animate.css",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\animate\\animate.css",
       "PackagePath": "staticwebassets\\lib\\animate\\animate.css"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\animate\\animate.min.css",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\animate\\animate.min.css",
       "PackagePath": "staticwebassets\\lib\\animate\\animate.min.css"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\easing\\easing.js",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\easing\\easing.js",
       "PackagePath": "staticwebassets\\lib\\easing\\easing.js"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\easing\\easing.min.js",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\easing\\easing.min.js",
       "PackagePath": "staticwebassets\\lib\\easing\\easing.min.js"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\owlcarousel\\LICENSE",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\owlcarousel\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\owlcarousel"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\owlcarousel\\assets\\ajax-loader.gif",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\owlcarousel\\assets\\ajax-loader.gif",
       "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\ajax-loader.gif"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\owlcarousel\\assets\\owl.carousel.css",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\owlcarousel\\assets\\owl.carousel.css",
       "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.carousel.css"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\owlcarousel\\assets\\owl.carousel.min.css",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\owlcarousel\\assets\\owl.carousel.min.css",
       "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.carousel.min.css"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.default.css",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.default.css",
       "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.theme.default.css"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.default.min.css",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.default.min.css",
       "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.theme.default.min.css"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.green.css",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.green.css",
       "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.theme.green.css"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.green.min.css",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.green.min.css",
       "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.theme.green.min.css"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\owlcarousel\\assets\\owl.video.play.png",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\owlcarousel\\assets\\owl.video.play.png",
       "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.video.play.png"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\owlcarousel\\owl.carousel.js",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\owlcarousel\\owl.carousel.js",
       "PackagePath": "staticwebassets\\lib\\owlcarousel\\owl.carousel.js"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\owlcarousel\\owl.carousel.min.js",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\owlcarousel\\owl.carousel.min.js",
       "PackagePath": "staticwebassets\\lib\\owlcarousel\\owl.carousel.min.js"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.css",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.css",
       "PackagePath": "staticwebassets\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.css"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.min.css",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.min.css",
       "PackagePath": "staticwebassets\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.min.css"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\tempusdominus\\js\\moment-timezone.min.js",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\tempusdominus\\js\\moment-timezone.min.js",
       "PackagePath": "staticwebassets\\lib\\tempusdominus\\js\\moment-timezone.min.js"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\tempusdominus\\js\\moment.min.js",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\tempusdominus\\js\\moment.min.js",
       "PackagePath": "staticwebassets\\lib\\tempusdominus\\js\\moment.min.js"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.js",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.js",
       "PackagePath": "staticwebassets\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.js"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.min.js",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.min.js",
       "PackagePath": "staticwebassets\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.min.js"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\waypoints\\links.php",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\waypoints\\links.php",
       "PackagePath": "staticwebassets\\lib\\waypoints\\links.php"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\waypoints\\waypoints.min.js",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\waypoints\\waypoints.min.js",
       "PackagePath": "staticwebassets\\lib\\waypoints\\waypoints.min.js"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\wow\\wow.js",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\wow\\wow.js",
       "PackagePath": "staticwebassets\\lib\\wow\\wow.js"
     },
     {
-      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\wow\\wow.min.js",
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\wow\\wow.min.js",
       "PackagePath": "staticwebassets\\lib\\wow\\wow.min.js"
     },
     {

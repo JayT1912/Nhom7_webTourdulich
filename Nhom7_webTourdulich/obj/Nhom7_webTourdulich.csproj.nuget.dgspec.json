@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\Nhom7_webTourdulich.csproj": {}
+    "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\Nhom7_webTourdulich.csproj": {}
   },
   "projects": {
-    "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\Nhom7_webTourdulich.csproj": {
+    "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\Nhom7_webTourdulich.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\Nhom7_webTourdulich.csproj",
+        "projectUniqueName": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\Nhom7_webTourdulich.csproj",
         "projectName": "Nhom7_webTourdulich",
-        "projectPath": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\Nhom7_webTourdulich.csproj",
-        "packagesPath": "C:\\Users\\chith\\.nuget\\packages\\",
-        "outputPath": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\obj\\",
+        "projectPath": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\Nhom7_webTourdulich.csproj",
+        "packagesPath": "C:\\Users\\KIET\\.nuget\\packages\\",
+        "outputPath": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\chith\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KIET\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -86,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
