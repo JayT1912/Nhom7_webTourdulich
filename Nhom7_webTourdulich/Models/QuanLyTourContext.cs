@@ -41,6 +41,10 @@ public partial class QuanLyTourContext : DbContext
 
     public virtual DbSet<TrangThai> TrangThais { get; set; }
 
+    public virtual DbSet<Register> Registers { get; set; }
+
+    public virtual DbSet<User> Users {get; set;}
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<ChiTietHoaDon>(entity =>

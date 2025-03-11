@@ -12,8 +12,8 @@ using Nhom7_webTourdulich.Models;
 namespace Nhom7_webTourdulich.Migrations
 {
     [DbContext(typeof(QuanLyTourContext))]
-    [Migration("20250305083329_AddRatingAndDescriptionToTour")]
-    partial class AddRatingAndDescriptionToTour
+    [Migration("20250311150927_AddUserTable")]
+    partial class AddUserTable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -427,6 +427,42 @@ namespace Nhom7_webTourdulich.Migrations
                     b.ToTable("PhuongTien", (string)null);
                 });
 
+            modelBuilder.Entity("Nhom7_webTourdulich.Models.Register", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FullName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsTermsAccepted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RepeatPassword")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Registers");
+                });
+
             modelBuilder.Entity("Nhom7_webTourdulich.Models.Tour", b =>
                 {
                     b.Property<string>("MaTour")
@@ -434,10 +470,6 @@ namespace Nhom7_webTourdulich.Migrations
                         .IsUnicode(false)
                         .HasColumnType("varchar(20)")
                         .HasColumnName("Ma_Tour");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("HinhAnh")
                         .HasMaxLength(255)
@@ -464,9 +496,6 @@ namespace Nhom7_webTourdulich.Migrations
                         .IsUnicode(false)
                         .HasColumnType("varchar(20)")
                         .HasColumnName("Ma_Loai_Tour");
-
-                    b.Property<int>("Rating")
-                        .HasColumnType("int");
 
                     b.Property<string>("SoLuongNguoi")
                         .HasMaxLength(255)
@@ -512,6 +541,30 @@ namespace Nhom7_webTourdulich.Migrations
                         .HasName("PK__TrangTha__B9CD9D6BDB4AF9BE");
 
                     b.ToTable("TrangThai", (string)null);
+                });
+
+            modelBuilder.Entity("Nhom7_webTourdulich.Models.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Remember")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("Nhom7_webTourdulich.Models.ChiTietHoaDon", b =>

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Nhom7_webTourdulich.Migrations
 {
     /// <inheritdoc />
-    public partial class AddRatingAndDescriptionToTour : Migration
+    public partial class AddUserTable : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -94,6 +94,24 @@ namespace Nhom7_webTourdulich.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Registers",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    FullName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Username = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    RepeatPassword = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    IsTermsAccepted = table.Column<bool>(type: "bit", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Registers", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "TrangThai",
                 columns: table => new
                 {
@@ -103,6 +121,21 @@ namespace Nhom7_webTourdulich.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK__TrangTha__B9CD9D6BDB4AF9BE", x => x.Ma_Trang_Thai);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Users",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Username = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Remember = table.Column<bool>(type: "bit", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Users", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -157,9 +190,7 @@ namespace Nhom7_webTourdulich.Migrations
                     Ma_Diem_Den = table.Column<string>(type: "varchar(20)", unicode: false, maxLength: 20, nullable: false),
                     So_Ngay = table.Column<int>(type: "int", nullable: false),
                     So_Luong_Nguoi = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
-                    Hinh_Anh = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
-                    Rating = table.Column<int>(type: "int", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Hinh_Anh = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true)
                 },
                 constraints: table =>
                 {
@@ -328,6 +359,12 @@ namespace Nhom7_webTourdulich.Migrations
 
             migrationBuilder.DropTable(
                 name: "PhuongTien");
+
+            migrationBuilder.DropTable(
+                name: "Registers");
+
+            migrationBuilder.DropTable(
+                name: "Users");
 
             migrationBuilder.DropTable(
                 name: "HoaDon");

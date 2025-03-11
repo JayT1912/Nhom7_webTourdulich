@@ -3,6 +3,8 @@ using Nhom7_webTourdulich.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddSession(); // Thêm session
+builder.Services.AddAuthentication(); // Thêm xác thực
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<QuanLyTourContext>(options =>
@@ -21,14 +23,14 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseRouting();
-
 app.UseAuthorization();
-
 app.MapStaticAssets();
+app.UseSession(); // Bật session
+
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
+    pattern: "{controller=Login}/{action=Index}/{id?}")
     .WithStaticAssets();
 
 

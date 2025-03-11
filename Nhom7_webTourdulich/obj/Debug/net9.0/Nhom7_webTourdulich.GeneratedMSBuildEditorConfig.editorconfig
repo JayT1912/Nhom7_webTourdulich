@@ -56,8 +56,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[M:/Nhom7_webTourdulich/Nhom7_webTourdulich/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [M:/Nhom7_webTourdulich/Nhom7_webTourdulich/Views/Package/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFja2FnZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[M:/Nhom7_webTourdulich/Nhom7_webTourdulich/Views/Register/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [M:/Nhom7_webTourdulich/Nhom7_webTourdulich/Views/Service/Index.cshtml]
@@ -66,6 +74,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [M:/Nhom7_webTourdulich/Nhom7_webTourdulich/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[M:/Nhom7_webTourdulich/Nhom7_webTourdulich/Views/Shared/_layoutChungLR.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9sYXlvdXRDaHVuZ0xSLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [M:/Nhom7_webTourdulich/Nhom7_webTourdulich/Views/Shared/_ValidationScriptsPartial.cshtml]
