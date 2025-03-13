@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "eK/gY5FyeVZAPTmFxYwM6eAndmudM9YHEm+th0vGarc=",
+  "Hash": "+ODpBz1Ndwrm8WY+c2uSWLRebatfw2SOppQqkwHAzRY=",
   "Source": "Nhom7_webTourdulich",
   "BasePath": "_content/Nhom7_webTourdulich",
   "Mode": "Default",
@@ -857,6 +857,27 @@
       "OriginalItemSpec": "wwwroot\\img\\kiet.jpg"
     },
     {
+      "Identity": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\loc.jpg",
+      "SourceId": "Nhom7_webTourdulich",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\",
+      "BasePath": "_content/Nhom7_webTourdulich",
+      "RelativePath": "img/loc#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "onlxwc029x",
+      "Integrity": "HMRaWQsFa9O5M8stBWihROlSLs2NjnUhJI1UF2DsZ58=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\loc.jpg"
+    },
+    {
       "Identity": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\nhung.jpg",
       "SourceId": "Nhom7_webTourdulich",
       "SourceType": "Discovered",
@@ -1107,6 +1128,69 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\testimonial-4.jpg"
+    },
+    {
+      "Identity": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\thanh.jpg",
+      "SourceId": "Nhom7_webTourdulich",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\",
+      "BasePath": "_content/Nhom7_webTourdulich",
+      "RelativePath": "img/thanh#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vay2aph8io",
+      "Integrity": "J3iQZvToEzBn9WMBifLF1niMFxVvc4PijjVeQ56rxbA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\thanh.jpg"
+    },
+    {
+      "Identity": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\z.png",
+      "SourceId": "Nhom7_webTourdulich",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\",
+      "BasePath": "_content/Nhom7_webTourdulich",
+      "RelativePath": "img/z#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "oi71bcpicl",
+      "Integrity": "sHis8YqMyu7ItkyKypCaaRuwNNkLlkUzO5JNrLTNnPg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\z.png"
+    },
+    {
+      "Identity": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\zalo1.png",
+      "SourceId": "Nhom7_webTourdulich",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\",
+      "BasePath": "_content/Nhom7_webTourdulich",
+      "RelativePath": "img/zalo1#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mu2udxviu7",
+      "Integrity": "EtUAoCPNfP/3PM6e562d7pAtMSAVGZnK+jtGGfhbkS0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\zalo1.png"
     },
     {
       "Identity": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\js\\main.js",
@@ -3207,6 +3291,88 @@
       ]
     },
     {
+      "Route": "img/loc.jpg",
+      "AssetFile": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\loc.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "327280"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HMRaWQsFa9O5M8stBWihROlSLs2NjnUhJI1UF2DsZ58=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 05:49:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HMRaWQsFa9O5M8stBWihROlSLs2NjnUhJI1UF2DsZ58="
+        }
+      ]
+    },
+    {
+      "Route": "img/loc.onlxwc029x.jpg",
+      "AssetFile": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\loc.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "327280"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HMRaWQsFa9O5M8stBWihROlSLs2NjnUhJI1UF2DsZ58=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 05:49:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "onlxwc029x"
+        },
+        {
+          "Name": "label",
+          "Value": "img/loc.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HMRaWQsFa9O5M8stBWihROlSLs2NjnUhJI1UF2DsZ58="
+        }
+      ]
+    },
+    {
       "Route": "img/nhung.c41u38nrgj.jpg",
       "AssetFile": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\nhung.jpg",
       "Selectors": [],
@@ -4187,6 +4353,252 @@
         {
           "Name": "integrity",
           "Value": "sha256-2wAwvuXfWzjMRMMKSIL584wbqh+gqnLNBGBVBem6i6o="
+        }
+      ]
+    },
+    {
+      "Route": "img/thanh.jpg",
+      "AssetFile": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\thanh.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7811"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J3iQZvToEzBn9WMBifLF1niMFxVvc4PijjVeQ56rxbA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 07:02:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-J3iQZvToEzBn9WMBifLF1niMFxVvc4PijjVeQ56rxbA="
+        }
+      ]
+    },
+    {
+      "Route": "img/thanh.vay2aph8io.jpg",
+      "AssetFile": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\thanh.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7811"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J3iQZvToEzBn9WMBifLF1niMFxVvc4PijjVeQ56rxbA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 07:02:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vay2aph8io"
+        },
+        {
+          "Name": "label",
+          "Value": "img/thanh.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-J3iQZvToEzBn9WMBifLF1niMFxVvc4PijjVeQ56rxbA="
+        }
+      ]
+    },
+    {
+      "Route": "img/z.oi71bcpicl.png",
+      "AssetFile": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\z.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13885"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sHis8YqMyu7ItkyKypCaaRuwNNkLlkUzO5JNrLTNnPg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 07:20:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "oi71bcpicl"
+        },
+        {
+          "Name": "label",
+          "Value": "img/z.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sHis8YqMyu7ItkyKypCaaRuwNNkLlkUzO5JNrLTNnPg="
+        }
+      ]
+    },
+    {
+      "Route": "img/z.png",
+      "AssetFile": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\z.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13885"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sHis8YqMyu7ItkyKypCaaRuwNNkLlkUzO5JNrLTNnPg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 07:20:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sHis8YqMyu7ItkyKypCaaRuwNNkLlkUzO5JNrLTNnPg="
+        }
+      ]
+    },
+    {
+      "Route": "img/zalo1.mu2udxviu7.png",
+      "AssetFile": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\zalo1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18454"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EtUAoCPNfP/3PM6e562d7pAtMSAVGZnK+jtGGfhbkS0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 07:22:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mu2udxviu7"
+        },
+        {
+          "Name": "label",
+          "Value": "img/zalo1.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EtUAoCPNfP/3PM6e562d7pAtMSAVGZnK+jtGGfhbkS0="
+        }
+      ]
+    },
+    {
+      "Route": "img/zalo1.png",
+      "AssetFile": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\zalo1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18454"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EtUAoCPNfP/3PM6e562d7pAtMSAVGZnK+jtGGfhbkS0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 07:22:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EtUAoCPNfP/3PM6e562d7pAtMSAVGZnK+jtGGfhbkS0="
         }
       ]
     },
