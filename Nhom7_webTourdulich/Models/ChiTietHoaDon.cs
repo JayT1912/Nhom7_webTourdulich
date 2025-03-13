@@ -7,7 +7,7 @@ public partial class ChiTietHoaDon
 {
     public string MaHoaDon { get; set; } = null!;
 
-    public string MaKhachHang { get; set; } = null!;
+    public int MaKhachHang { get; set; } 
 
     public decimal GiaTour { get; set; }
 

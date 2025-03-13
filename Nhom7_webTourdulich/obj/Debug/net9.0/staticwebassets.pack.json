@@ -45,6 +45,14 @@
       "PackagePath": "staticwebassets\\img\\destination-4.jpg"
     },
     {
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\kiet.jpg",
+      "PackagePath": "staticwebassets\\img\\kiet.jpg"
+    },
+    {
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\nhung.jpg",
+      "PackagePath": "staticwebassets\\img\\nhung.jpg"
+    },
+    {
       "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\package-1.jpg",
       "PackagePath": "staticwebassets\\img\\package-1.jpg"
     },

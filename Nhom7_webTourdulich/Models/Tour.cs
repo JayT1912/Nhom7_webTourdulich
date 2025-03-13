@@ -15,17 +15,22 @@ public partial class Tour
 
     public string MaDiemDen { get; set; } = null!;
 
-    public int SoNgay { get; set; }
+    public string SoNgay { get; set; }
 
     public string? SoLuongNguoi { get; set; }
 
     public string? HinhAnh { get; set; }
 
+    // Quan hệ với DiemDen
     public virtual DiemDen MaDiemDenNavigation { get; set; } = null!;
 
+    // Quan hệ với GiaTour
     public virtual GiaTour MaGiaTourNavigation { get; set; } = null!;
 
+    // Quan hệ với LoaiTour
     public virtual LoaiTour MaLoaiTourNavigation { get; set; } = null!;
+    public ICollection<KhachHang>? KhachHangs { get; set; }
 
+    // Quan hệ với NhomTour
     public virtual ICollection<NhomTour> NhomTours { get; set; } = new List<NhomTour>();
 }

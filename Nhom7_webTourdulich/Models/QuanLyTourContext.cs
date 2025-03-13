@@ -31,6 +31,7 @@ public partial class QuanLyTourContext : DbContext
 
     public virtual DbSet<LoaiTour> LoaiTours { get; set; }
 
+
     public virtual DbSet<NhanVien> NhanViens { get; set; }
 
     public virtual DbSet<NhomTour> NhomTours { get; set; }
@@ -45,8 +46,13 @@ public partial class QuanLyTourContext : DbContext
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
         => optionsBuilder.UseSqlServer("Server=LAPTOP-IGLC6V19;Database=QuanLyTour;Integrated Security=True;Trust Server Certificate=True");
 
+
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+       base.OnModelCreating(modelBuilder);
+    // Map entity Tour đến bảng "tour"
+    modelBuilder.Entity<Tour>().ToTable("tour");
         modelBuilder.Entity<ChiTietHoaDon>(entity =>
         {
             entity.HasKey(e => new { e.MaHoaDon, e.MaKhachHang }).HasName("PK__ChiTietH__A294B5FBC6D9C49E");
