@@ -14,15 +14,16 @@ public class PackageController : Controller
         _logger = logger;
         _quanLyTour = quanLyTour;
     }
+
     public IActionResult Index()
     {
         var tours = _quanLyTour.Tours
-            .Include(t => t.MaGiaTourNavigation)  // Bao gồm thông tin giá tour
-            .Include(t => t.MaLoaiTourNavigation) // Bao gồm thông tin loại tour
-            .Include(t => t.MaDiemDenNavigation) // Bao gồm thông tin điểm đến
+            .Include(t => t.MaGiaTourNavigation)
+            .Include(t => t.MaLoaiTourNavigation)
+            .Include(t => t.MaDiemDenNavigation) 
             .ToList();
 
-        return View(tours);  // Trả về view với danh sách các tour
+        return View(tours); 
     }
 
     public IActionResult Privacy()
@@ -35,4 +36,5 @@ public class PackageController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
+    
 }

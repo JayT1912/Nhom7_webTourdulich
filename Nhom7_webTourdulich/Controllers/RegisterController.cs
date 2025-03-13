@@ -7,48 +7,40 @@ namespace Nhom7_webTourdulich.Controllers
 {
     public class RegisterController : Controller
     {
-        private readonly QuanLyTourContext _quanLyTour;  // Dùng DbContext để tương tác với cơ sở dữ liệu
+        private readonly QuanLyTourContext _quanLyTour; 
         private readonly ILogger<RegisterController> _logger;
 
-        // Inject QuanLyTourContext vào constructor
         public RegisterController(ILogger<RegisterController> logger, QuanLyTourContext quanLyTour)
         {
             _logger = logger;
             _quanLyTour = quanLyTour;
         }
 
-        // GET: Register
         public IActionResult Index()
         {
             return View(); 
         }
 
-    // POST: Register
-    [HttpPost]
-    [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Index(Register register)
-    {
-        if (ModelState.IsValid)
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Index(Register register)
         {
-            // Tạo đối tượng User từ thông tin đăng ký
-            var newUser = new User
+            if (ModelState.IsValid)
             {
-                Username = register.Username,
-                Password = register.Password // Cần mã hóa mật khẩu nếu có
-            };
+                var newUser = new User
+                {
+                    Username = register.Username,
+                    Password = register.Password 
+                };
+                _quanLyTour.Users.Add(newUser); 
+                _quanLyTour.Registers.Add(register);  
+                await _quanLyTour.SaveChangesAsync(); 
 
-            // Lưu thông tin vào cơ sở dữ liệu bằng DbContext
-            _quanLyTour.Users.Add(newUser); // Đúng
-            _quanLyTour.Registers.Add(register);  // Registers là DbSet trong QuanLyTourContext
-            await _quanLyTour.SaveChangesAsync(); // Lưu dữ liệu vào database
+                return RedirectToAction("Index", "Home");
+            }
 
-            // Chuyển hướng đến trang chính hoặc đăng nhập
-            return RedirectToAction("Index", "Home");
+            return View(register);
         }
-
-        return View(register); // Nếu Model không hợp lệ, quay lại form đăng ký
-    }
-
 
         public IActionResult Privacy()
         {

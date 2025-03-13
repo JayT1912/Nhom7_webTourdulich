@@ -23,31 +23,27 @@ public class LoginController : Controller
         return View();
     }
 
-// POST: Login
-[HttpPost]
-[ValidateAntiForgeryToken]
-public async Task<IActionResult> Index(User user)
-{
-    if (ModelState.IsValid)
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Index(User user)
     {
-        // Tìm người dùng trong bảng Users
-        var User = await _quanLyTour.Users
-            .FirstOrDefaultAsync(u => u.Username == user.Username);
-        // Kiểm tra xem user có tồn tại không và password có khớp không
-        if (User != null && User.Password == user.Password) 
+        if (ModelState.IsValid)
         {
-            // Đăng nhập thành công - có thể thiết lập session hoặc cookies
-            HttpContext.Session.SetString("Username", User.Username); // Lưu vào session
-            return RedirectToAction("Index", "Home"); // Chuyển hướng sau khi đăng nhập thành công
+            var User = await _quanLyTour.Users
+                .FirstOrDefaultAsync(u => u.Username == user.Username);
+            if (User != null && User.Password == user.Password) 
+            {
+                HttpContext.Session.SetString("Username", User.Username);
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                ModelState.AddModelError("", "Tên đăng nhập hoặc mật khẩu không đúng.");
+            }
         }
-        else
-        {
-            ModelState.AddModelError("", "Tên đăng nhập hoặc mật khẩu không đúng.");
-        }
-    }
 
-    return View(user); // Nếu đăng nhập thất bại, quay lại trang login
-}
+        return View(user); 
+    }
 
 
     public IActionResult Privacy()

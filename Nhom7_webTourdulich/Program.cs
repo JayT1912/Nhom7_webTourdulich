@@ -10,7 +10,6 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<QuanLyTourContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -30,7 +29,7 @@ app.UseSession(); // Bật session
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Login}/{action=Index}/{id?}")
+    pattern: "{controller=Home}/{action=Index}/{id?}")
     .WithStaticAssets();
 
 
