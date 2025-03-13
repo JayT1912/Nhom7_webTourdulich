@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @model List<Nhom7_webTourdulich.Models.Tour>
 
 <body>
@@ -34,14 +35,54 @@
                 <div class="d-flex justify-content-center mb-2">
                     <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Đọc Thêm</a>
 <a href="@Url.Action("Create", "KhachHang")" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Đặt Ngay</a>
+=======
+@model List<Nhom7_webTourdulich.Models.Tour> 
+<body>
+    <!-- Package Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Gói</h6>
+                <h1 class="mb-5">Bạn muốn đi tham quan chứ</h1>
+            </div>
+    <div class="row g-4 justify-content-center">
+        @foreach (var tour in Model)
+        {
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="package-item">
+                    <div class="overflow-hidden">
+                        <img class="img-fluid" src="@tour.HinhAnh" alt="@tour.Ten">
+                    </div>
+                    <div class="d-flex border-bottom">
+                        <small class="flex-fill text-center border-end py-2">
+                            <i class="fa fa-map-marker-alt text-primary me-2"></i>@tour.MaDiemDenNavigation.Ten
+                        </small>
+                        <small class="flex-fill text-center border-end py-2">
+                            <i class="fa fa-calendar-alt text-primary me-2"></i>@tour.SoNgay days
+                        </small>
+                        <small class="flex-fill text-center py-2">
+                            <i class="fa fa-user text-primary me-2"></i>@tour.SoLuongNguoi Person
+                        </small>
+                    </div>
+                    <div class="text-center p-4">
+                        <h3 class="mb-0">@tour.MaGiaTourNavigation.Gia</h3>
+                        <div class="d-flex justify-content-center mb-2">
+                            <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                           <a href="@Url.Action("Index", "Booking")"class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                        </div>
+                    </div>
+>>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
                 </div>
             </div>
-        </div>
+        }
     </div>
+<<<<<<< HEAD
     }      
         </div>
     </div>
 </div>
 <!-- Gói Kết Thúc -->
 
+=======
+>>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 </body>

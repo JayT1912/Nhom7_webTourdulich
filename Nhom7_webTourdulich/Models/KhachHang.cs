@@ -22,7 +22,25 @@ namespace Nhom7_webTourdulich.Models
         public string? MaTour { get; set; }
         public virtual Tour? Tour { get; set; }
 
+<<<<<<< HEAD
         public virtual ICollection<ChiTietHoaDon> ChiTietHoaDons { get; set; } = new List<ChiTietHoaDon>();
         public virtual ICollection<HoaDon> HoaDons { get; set; } = new List<HoaDon>();
     }
+=======
+    public string Sdt { get; set; } = null!;
+
+    public string DiaChi { get; set; } = null!;
+
+    public string Email { get; set; } = null!;
+
+    public string GioiTinh { get; set; } = null!;
+
+    public string QuocTich { get; set; } = null!;
+
+    public string? HinhAnh { get; set; }
+
+    public virtual ICollection<ChiTietHoaDon> ChiTietHoaDons { get; set; } = new List<ChiTietHoaDon>();
+
+    public virtual ICollection<HoaDon> HoaDons { get; set; } = new List<HoaDon>();
+>>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 }
