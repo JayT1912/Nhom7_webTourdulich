@@ -42,31 +42,27 @@ public partial class QuanLyTourContext : DbContext
 
     public virtual DbSet<TrangThai> TrangThais { get; set; }
 
-<<<<<<< HEAD
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
         => optionsBuilder.UseSqlServer("Server=LAPTOP-IGLC6V19;Database=QuanLyTour;Integrated Security=True;Trust Server Certificate=True");
 
-=======
+
     public virtual DbSet<Register> Registers { get; set; }
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
     public virtual DbSet<User> Users {get; set;}
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-<<<<<<< HEAD
        base.OnModelCreating(modelBuilder);
     // Map entity Tour đến bảng "tour"
     modelBuilder.Entity<Tour>().ToTable("tour");
         modelBuilder.Entity<ChiTietHoaDon>(entity =>
         {
             entity.HasKey(e => new { e.MaHoaDon, e.MaKhachHang }).HasName("PK__ChiTietH__A294B5FBC6D9C49E");
-=======
+
         modelBuilder.Entity<ChiTietHoaDon>(entity =>
         {
             entity.HasKey(e => new { e.MaHoaDon, e.MaKhachHang }).HasName("PK__ChiTietH__A294B5FB13EB6400");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
             entity.ToTable("ChiTietHoaDon");
 
@@ -92,29 +88,23 @@ public partial class QuanLyTourContext : DbContext
             entity.HasOne(d => d.MaHoaDonNavigation).WithMany(p => p.ChiTietHoaDons)
                 .HasForeignKey(d => d.MaHoaDon)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-<<<<<<< HEAD
                 .HasConstraintName("FK__ChiTietHo__Ma_Ho__151B244E");
-=======
+
                 .HasConstraintName("FK__ChiTietHo__Ma_Ho__5629CD9C");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
             entity.HasOne(d => d.MaKhachHangNavigation).WithMany(p => p.ChiTietHoaDons)
                 .HasForeignKey(d => d.MaKhachHang)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-<<<<<<< HEAD
                 .HasConstraintName("FK__ChiTietHo__Ma_Kh__160F4887");
-=======
+
                 .HasConstraintName("FK__ChiTietHo__Ma_Kh__571DF1D5");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
         });
 
         modelBuilder.Entity<ChucVu>(entity =>
         {
-<<<<<<< HEAD
             entity.HasKey(e => e.MaChucVu).HasName("PK__ChucVu__EFE449720DAF3C2C");
-=======
+
             entity.HasKey(e => e.MaChucVu).HasName("PK__ChucVu__EFE449723DD79615");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
             entity.ToTable("ChucVu");
 
@@ -129,11 +119,9 @@ public partial class QuanLyTourContext : DbContext
 
         modelBuilder.Entity<DiemDen>(entity =>
         {
-<<<<<<< HEAD
             entity.HasKey(e => e.MaDiemDen).HasName("PK__DiemDen__34267B5EDBE1CB85");
-=======
+
             entity.HasKey(e => e.MaDiemDen).HasName("PK__DiemDen__34267B5E86B79B2E");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
             entity.ToTable("DiemDen");
 
@@ -149,11 +137,9 @@ public partial class QuanLyTourContext : DbContext
 
         modelBuilder.Entity<GiaTour>(entity =>
         {
-<<<<<<< HEAD
             entity.HasKey(e => e.MaGiaTour).HasName("PK__GiaTour__6B20AB462CA1B26C");
-=======
+
             entity.HasKey(e => e.MaGiaTour).HasName("PK__GiaTour__6B20AB467AE194FF");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
             entity.ToTable("GiaTour");
 
@@ -168,11 +154,9 @@ public partial class QuanLyTourContext : DbContext
 
         modelBuilder.Entity<HoaDon>(entity =>
         {
-<<<<<<< HEAD
             entity.HasKey(e => e.MaHoaDon).HasName("PK__HoaDon__91EF063FC4157924");
-=======
+
             entity.HasKey(e => e.MaHoaDon).HasName("PK__HoaDon__91EF063FFF61E16D");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
             entity.ToTable("HoaDon");
 
@@ -205,29 +189,23 @@ public partial class QuanLyTourContext : DbContext
             entity.HasOne(d => d.MaKhachHangNavigation).WithMany(p => p.HoaDons)
                 .HasForeignKey(d => d.MaKhachHang)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-<<<<<<< HEAD
                 .HasConstraintName("FK__HoaDon__Ma_Khach__10566F31");
-=======
+
                 .HasConstraintName("FK__HoaDon__Ma_Khach__5165187F");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
             entity.HasOne(d => d.MaNhomTourNavigation).WithMany(p => p.HoaDons)
                 .HasForeignKey(d => d.MaNhomTour)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-<<<<<<< HEAD
                 .HasConstraintName("FK__HoaDon__Ma_Nhom___114A936A");
-=======
+
                 .HasConstraintName("FK__HoaDon__Ma_Nhom___52593CB8");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
         });
 
         modelBuilder.Entity<KhachHang>(entity =>
         {
-<<<<<<< HEAD
             entity.HasKey(e => e.MaKhachHang).HasName("PK__KhachHan__37BB3C42DB802C2D");
-=======
+
             entity.HasKey(e => e.MaKhachHang).HasName("PK__KhachHan__37BB3C420E78E4C3");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
             entity.ToTable("KhachHang");
 
@@ -256,11 +234,9 @@ public partial class QuanLyTourContext : DbContext
 
         modelBuilder.Entity<KhuyenMai>(entity =>
         {
-<<<<<<< HEAD
             entity.HasKey(e => e.MaKhuyenMai).HasName("PK__KhuyenMa__19F298C55EA7F7FF");
-=======
+
             entity.HasKey(e => e.MaKhuyenMai).HasName("PK__KhuyenMa__19F298C5BD513EEA");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
             entity.ToTable("KhuyenMai");
 
@@ -285,20 +261,16 @@ public partial class QuanLyTourContext : DbContext
             entity.HasOne(d => d.MaGiaTourNavigation).WithMany(p => p.KhuyenMais)
                 .HasForeignKey(d => d.MaGiaTour)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-<<<<<<< HEAD
                 .HasConstraintName("FK__KhuyenMai__Ma_Gi__6C190EBB");
-=======
+
                 .HasConstraintName("FK__KhuyenMai__Ma_Gi__59FA5E80");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
         });
 
         modelBuilder.Entity<LoaiTour>(entity =>
         {
-<<<<<<< HEAD
             entity.HasKey(e => e.MaLoaiTour).HasName("PK__LoaiTour__ACE9E7DA26904217");
-=======
+
             entity.HasKey(e => e.MaLoaiTour).HasName("PK__LoaiTour__ACE9E7DAC83A2409");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
             entity.ToTable("LoaiTour");
 
@@ -313,11 +285,9 @@ public partial class QuanLyTourContext : DbContext
 
         modelBuilder.Entity<NhanVien>(entity =>
         {
-<<<<<<< HEAD
             entity.HasKey(e => e.MaNhanVien).HasName("PK__NhanVien__7AB89689143E91C2");
-=======
+
             entity.HasKey(e => e.MaNhanVien).HasName("PK__NhanVien__7AB896891713CABD");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
             entity.ToTable("NhanVien");
 
@@ -337,20 +307,16 @@ public partial class QuanLyTourContext : DbContext
             entity.HasOne(d => d.MaChucVuNavigation).WithMany(p => p.NhanViens)
                 .HasForeignKey(d => d.MaChucVu)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-<<<<<<< HEAD
                 .HasConstraintName("FK__NhanVien__Ma_Chu__5812160E");
-=======
+
                 .HasConstraintName("FK__NhanVien__Ma_Chu__4316F928");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
         });
 
         modelBuilder.Entity<NhomTour>(entity =>
         {
-<<<<<<< HEAD
             entity.HasKey(e => e.MaNhomTour).HasName("PK__NhomTour__3D75DE0FE9D64DA2");
-=======
+
             entity.HasKey(e => e.MaNhomTour).HasName("PK__NhomTour__3D75DE0FA98AB25B");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
             entity.ToTable("NhomTour");
 
@@ -379,29 +345,23 @@ public partial class QuanLyTourContext : DbContext
             entity.HasOne(d => d.MaTourNavigation).WithMany(p => p.NhomTours)
                 .HasForeignKey(d => d.MaTour)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-<<<<<<< HEAD
                 .HasConstraintName("FK__NhomTour__Ma_Tou__0B91BA14");
-=======
+
                 .HasConstraintName("FK__NhomTour__Ma_Tou__4CA06362");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
             entity.HasOne(d => d.MaTrangThaiNavigation).WithMany(p => p.NhomTours)
                 .HasForeignKey(d => d.MaTrangThai)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-<<<<<<< HEAD
                 .HasConstraintName("FK__NhomTour__Ma_Tra__0C85DE4D");
-=======
+
                 .HasConstraintName("FK__NhomTour__Ma_Tra__4D94879B");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
         });
 
         modelBuilder.Entity<PhuongTien>(entity =>
         {
-<<<<<<< HEAD
             entity.HasKey(e => e.MaPhuongTien).HasName("PK__PhuongTi__09E91370F7B68465");
-=======
+
             entity.HasKey(e => e.MaPhuongTien).HasName("PK__PhuongTi__09E91370EB43D8E5");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
             entity.ToTable("PhuongTien");
 
@@ -418,11 +378,9 @@ public partial class QuanLyTourContext : DbContext
 
         modelBuilder.Entity<Tour>(entity =>
         {
-<<<<<<< HEAD
             entity.HasKey(e => e.MaTour).HasName("PK__Tour__1C19FFEA992E3B6A");
-=======
+
             entity.HasKey(e => e.MaTour).HasName("PK__Tour__1C19FFEADA1259D4");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
             entity.ToTable("Tour");
 
@@ -454,38 +412,30 @@ public partial class QuanLyTourContext : DbContext
             entity.HasOne(d => d.MaDiemDenNavigation).WithMany(p => p.Tours)
                 .HasForeignKey(d => d.MaDiemDen)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-<<<<<<< HEAD
                 .HasConstraintName("FK__Tour__Ma_Diem_De__76969D2E");
-=======
+
                 .HasConstraintName("FK__Tour__Ma_Diem_De__49C3F6B7");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
             entity.HasOne(d => d.MaGiaTourNavigation).WithMany(p => p.Tours)
                 .HasForeignKey(d => d.MaGiaTour)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-<<<<<<< HEAD
                 .HasConstraintName("FK__Tour__Ma_Gia_Tou__75A278F5");
-=======
+
                 .HasConstraintName("FK__Tour__Ma_Gia_Tou__48CFD27E");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
             entity.HasOne(d => d.MaLoaiTourNavigation).WithMany(p => p.Tours)
                 .HasForeignKey(d => d.MaLoaiTour)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-<<<<<<< HEAD
                 .HasConstraintName("FK__Tour__Ma_Loai_To__74AE54BC");
-=======
+
                 .HasConstraintName("FK__Tour__Ma_Loai_To__47DBAE45");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
         });
 
         modelBuilder.Entity<TrangThai>(entity =>
         {
-<<<<<<< HEAD
             entity.HasKey(e => e.MaTrangThai).HasName("PK__TrangTha__B9CD9D6BA20F14FE");
-=======
+
             entity.HasKey(e => e.MaTrangThai).HasName("PK__TrangTha__B9CD9D6BDB4AF9BE");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
             entity.ToTable("TrangThai");
 
@@ -502,4 +452,5 @@ public partial class QuanLyTourContext : DbContext
     }
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+}
 }

@@ -15,15 +15,13 @@ public partial class Tour
 
     public string MaDiemDen { get; set; } = null!;
 
-<<<<<<< HEAD
     public string SoNgay { get; set; }
-=======
+
     public int SoNgay { get; set; }
 
     public string? SoLuongNguoi { get; set; }
 
     public string? HinhAnh { get; set; }
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
     public string? SoLuongNguoi { get; set; }
 
@@ -34,11 +32,9 @@ public partial class Tour
 
     // Quan hệ với GiaTour
     public virtual GiaTour MaGiaTourNavigation { get; set; } = null!;
-<<<<<<< HEAD
 
     // Quan hệ với LoaiTour
-=======
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
+
     public virtual LoaiTour MaLoaiTourNavigation { get; set; } = null!;
     public ICollection<KhachHang>? KhachHangs { get; set; }
 

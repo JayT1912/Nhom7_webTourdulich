@@ -17,10 +17,9 @@ public class PackageController : Controller
 
     public IActionResult Index()
     {
-<<<<<<< HEAD
         var tours = _quanLyTour.Tours.ToList();  
         return View(tours);
-=======
+
         var tours = _quanLyTour.Tours
             .Include(t => t.MaGiaTourNavigation)
             .Include(t => t.MaLoaiTourNavigation)
@@ -28,7 +27,6 @@ public class PackageController : Controller
             .ToList();
 
         return View(tours); 
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
     }
 
     public IActionResult Privacy()
