@@ -30,17 +30,10 @@ namespace Nhom7_webTourdulich.Migrations
                         .HasColumnType("varchar(20)")
                         .HasColumnName("Ma_Hoa_Don");
 
-<<<<<<< HEAD
                     b.Property<int>("MaKhachHang")
                         .HasMaxLength(20)
                         .IsUnicode(false)
                         .HasColumnType("int")
-=======
-                    b.Property<string>("MaKhachHang")
-                        .HasMaxLength(20)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(20)")
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
                         .HasColumnName("Ma_Khach_Hang");
 
                     b.Property<decimal>("GiaTour")
@@ -60,11 +53,7 @@ namespace Nhom7_webTourdulich.Migrations
                         .HasComputedColumnSql("([Gia_Tour]*[So_Luong])", true);
 
                     b.HasKey("MaHoaDon", "MaKhachHang")
-<<<<<<< HEAD
-                        .HasName("PK__ChiTietH__A294B5FBC6D9C49E");
-=======
                         .HasName("PK__ChiTietH__A294B5FB13EB6400");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
                     b.HasIndex("MaKhachHang");
 
@@ -86,11 +75,7 @@ namespace Nhom7_webTourdulich.Migrations
                         .HasColumnName("Ten_Chuc_Vu");
 
                     b.HasKey("MaChucVu")
-<<<<<<< HEAD
-                        .HasName("PK__ChucVu__EFE449720DAF3C2C");
-=======
                         .HasName("PK__ChucVu__EFE449723DD79615");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
                     b.ToTable("ChucVu", (string)null);
                 });
@@ -115,11 +100,7 @@ namespace Nhom7_webTourdulich.Migrations
                         .HasColumnName("Thanh_Pho");
 
                     b.HasKey("MaDiemDen")
-<<<<<<< HEAD
-                        .HasName("PK__DiemDen__34267B5EDBE1CB85");
-=======
                         .HasName("PK__DiemDen__34267B5E86B79B2E");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
                     b.ToTable("DiemDen", (string)null);
                 });
@@ -127,6 +108,7 @@ namespace Nhom7_webTourdulich.Migrations
             modelBuilder.Entity("Nhom7_webTourdulich.Models.GiaTour", b =>
                 {
                     b.Property<string>("MaGiaTour")
+                        .ValueGeneratedOnAdd()
                         .HasMaxLength(20)
                         .IsUnicode(false)
                         .HasColumnType("varchar(20)")
@@ -144,11 +126,7 @@ namespace Nhom7_webTourdulich.Migrations
                         .HasColumnName("Ngay_Ket_Thuc");
 
                     b.HasKey("MaGiaTour")
-<<<<<<< HEAD
-                        .HasName("PK__GiaTour__6B20AB462CA1B26C");
-=======
                         .HasName("PK__GiaTour__6B20AB467AE194FF");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
                     b.ToTable("GiaTour", (string)null);
                 });
@@ -171,19 +149,14 @@ namespace Nhom7_webTourdulich.Migrations
                         .HasColumnType("time")
                         .HasColumnName("Gio_Di");
 
-<<<<<<< HEAD
                     b.Property<int>("MaKhachHang")
                         .HasMaxLength(20)
                         .IsUnicode(false)
                         .HasColumnType("int")
-=======
-                    b.Property<string>("MaKhachHang")
-                        .IsRequired()
-                        .HasMaxLength(20)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(20)")
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
                         .HasColumnName("Ma_Khach_Hang");
+
+                    b.Property<int>("MaKhachHangNavigationMaKhachHang")
+                        .HasColumnType("int");
 
                     b.Property<string>("MaNhomTour")
                         .IsRequired()
@@ -212,13 +185,9 @@ namespace Nhom7_webTourdulich.Migrations
                         .HasColumnName("Tong_Tien");
 
                     b.HasKey("MaHoaDon")
-<<<<<<< HEAD
-                        .HasName("PK__HoaDon__91EF063FC4157924");
-=======
                         .HasName("PK__HoaDon__91EF063FFF61E16D");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
-                    b.HasIndex("MaKhachHang");
+                    b.HasIndex("MaKhachHangNavigationMaKhachHang");
 
                     b.HasIndex("MaNhomTour");
 
@@ -227,7 +196,6 @@ namespace Nhom7_webTourdulich.Migrations
 
             modelBuilder.Entity("Nhom7_webTourdulich.Models.KhachHang", b =>
                 {
-<<<<<<< HEAD
                     b.Property<int>("MaKhachHang")
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(20)
@@ -237,14 +205,6 @@ namespace Nhom7_webTourdulich.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaKhachHang"));
 
-=======
-                    b.Property<string>("MaKhachHang")
-                        .HasMaxLength(20)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(20)")
-                        .HasColumnName("Ma_Khach_Hang");
-
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
                     b.Property<string>("DiaChi")
                         .IsRequired()
                         .HasMaxLength(255)
@@ -267,12 +227,9 @@ namespace Nhom7_webTourdulich.Migrations
                         .HasColumnType("nvarchar(255)")
                         .HasColumnName("Hinh_Anh");
 
-<<<<<<< HEAD
                     b.Property<string>("MaTour")
                         .HasColumnType("varchar(20)");
 
-=======
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
                     b.Property<string>("QuocTich")
                         .IsRequired()
                         .HasMaxLength(255)
@@ -291,13 +248,9 @@ namespace Nhom7_webTourdulich.Migrations
                         .HasColumnType("nvarchar(255)");
 
                     b.HasKey("MaKhachHang")
-<<<<<<< HEAD
-                        .HasName("PK__KhachHan__37BB3C42DB802C2D");
+                        .HasName("PK__KhachHan__37BB3C420E78E4C3");
 
                     b.HasIndex("MaTour");
-=======
-                        .HasName("PK__KhachHan__37BB3C420E78E4C3");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
                     b.ToTable("KhachHang", (string)null);
                 });
@@ -305,6 +258,7 @@ namespace Nhom7_webTourdulich.Migrations
             modelBuilder.Entity("Nhom7_webTourdulich.Models.KhuyenMai", b =>
                 {
                     b.Property<string>("MaKhuyenMai")
+                        .ValueGeneratedOnAdd()
                         .HasMaxLength(20)
                         .IsUnicode(false)
                         .HasColumnType("varchar(20)")
@@ -341,11 +295,7 @@ namespace Nhom7_webTourdulich.Migrations
                         .HasColumnName("Ten_Khuyen_Mai");
 
                     b.HasKey("MaKhuyenMai")
-<<<<<<< HEAD
-                        .HasName("PK__KhuyenMa__19F298C55EA7F7FF");
-=======
                         .HasName("PK__KhuyenMa__19F298C5BD513EEA");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
                     b.HasIndex("MaGiaTour");
 
@@ -367,18 +317,13 @@ namespace Nhom7_webTourdulich.Migrations
                         .HasColumnName("Ten_Loai_Tour");
 
                     b.HasKey("MaLoaiTour")
-<<<<<<< HEAD
-                        .HasName("PK__LoaiTour__ACE9E7DA26904217");
-=======
                         .HasName("PK__LoaiTour__ACE9E7DAC83A2409");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
                     b.ToTable("LoaiTour", (string)null);
                 });
 
             modelBuilder.Entity("Nhom7_webTourdulich.Models.NhanVien", b =>
                 {
-<<<<<<< HEAD
                     b.Property<int>("MaNhanVien")
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(20)
@@ -388,20 +333,11 @@ namespace Nhom7_webTourdulich.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaNhanVien"));
 
-=======
-                    b.Property<string>("MaNhanVien")
-                        .HasMaxLength(20)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(20)")
-                        .HasColumnName("Ma_Nhan_Vien");
-
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
                     b.Property<string>("HinhAnh")
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)")
                         .HasColumnName("Hinh_Anh");
 
-<<<<<<< HEAD
                     b.Property<string>("LinkFB")
                         .HasColumnType("nvarchar(max)");
 
@@ -411,8 +347,6 @@ namespace Nhom7_webTourdulich.Migrations
                     b.Property<string>("LinkZL")
                         .HasColumnType("nvarchar(max)");
 
-=======
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
                     b.Property<string>("MaChucVu")
                         .IsRequired()
                         .HasMaxLength(20)
@@ -426,11 +360,7 @@ namespace Nhom7_webTourdulich.Migrations
                         .HasColumnType("nvarchar(255)");
 
                     b.HasKey("MaNhanVien")
-<<<<<<< HEAD
-                        .HasName("PK__NhanVien__7AB89689143E91C2");
-=======
                         .HasName("PK__NhanVien__7AB896891713CABD");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
                     b.HasIndex("MaChucVu");
 
@@ -483,11 +413,7 @@ namespace Nhom7_webTourdulich.Migrations
                         .HasColumnName("So_Luong_Nguoi");
 
                     b.HasKey("MaNhomTour")
-<<<<<<< HEAD
-                        .HasName("PK__NhomTour__3D75DE0FE9D64DA2");
-=======
                         .HasName("PK__NhomTour__3D75DE0FA98AB25B");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
                     b.HasIndex("MaTour");
 
@@ -499,6 +425,7 @@ namespace Nhom7_webTourdulich.Migrations
             modelBuilder.Entity("Nhom7_webTourdulich.Models.PhuongTien", b =>
                 {
                     b.Property<string>("MaPhuongTien")
+                        .ValueGeneratedOnAdd()
                         .HasMaxLength(20)
                         .IsUnicode(false)
                         .HasColumnType("varchar(20)")
@@ -517,17 +444,11 @@ namespace Nhom7_webTourdulich.Migrations
                         .HasColumnName("Trang_Thai");
 
                     b.HasKey("MaPhuongTien")
-<<<<<<< HEAD
-                        .HasName("PK__PhuongTi__09E91370F7B68465");
-=======
                         .HasName("PK__PhuongTi__09E91370EB43D8E5");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
                     b.ToTable("PhuongTien", (string)null);
                 });
 
-<<<<<<< HEAD
-=======
             modelBuilder.Entity("Nhom7_webTourdulich.Models.Register", b =>
                 {
                     b.Property<int>("Id")
@@ -564,7 +485,6 @@ namespace Nhom7_webTourdulich.Migrations
                     b.ToTable("Registers");
                 });
 
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
             modelBuilder.Entity("Nhom7_webTourdulich.Models.Tour", b =>
                 {
                     b.Property<string>("MaTour")
@@ -604,14 +524,9 @@ namespace Nhom7_webTourdulich.Migrations
                         .HasColumnType("nvarchar(255)")
                         .HasColumnName("So_Luong_Nguoi");
 
-<<<<<<< HEAD
                     b.Property<string>("SoNgay")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)")
-=======
-                    b.Property<int>("SoNgay")
-                        .HasColumnType("int")
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
                         .HasColumnName("So_Ngay");
 
                     b.Property<string>("Ten")
@@ -620,11 +535,7 @@ namespace Nhom7_webTourdulich.Migrations
                         .HasColumnType("nvarchar(255)");
 
                     b.HasKey("MaTour")
-<<<<<<< HEAD
-                        .HasName("PK__Tour__1C19FFEA992E3B6A");
-=======
                         .HasName("PK__Tour__1C19FFEADA1259D4");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
                     b.HasIndex("MaDiemDen");
 
@@ -650,17 +561,11 @@ namespace Nhom7_webTourdulich.Migrations
                         .HasColumnName("Ten_Trang_Thai");
 
                     b.HasKey("MaTrangThai")
-<<<<<<< HEAD
-                        .HasName("PK__TrangTha__B9CD9D6BA20F14FE");
-=======
                         .HasName("PK__TrangTha__B9CD9D6BDB4AF9BE");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
                     b.ToTable("TrangThai", (string)null);
                 });
 
-<<<<<<< HEAD
-=======
             modelBuilder.Entity("Nhom7_webTourdulich.Models.User", b =>
                 {
                     b.Property<int>("Id")
@@ -685,28 +590,19 @@ namespace Nhom7_webTourdulich.Migrations
                     b.ToTable("Users");
                 });
 
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
             modelBuilder.Entity("Nhom7_webTourdulich.Models.ChiTietHoaDon", b =>
                 {
                     b.HasOne("Nhom7_webTourdulich.Models.HoaDon", "MaHoaDonNavigation")
                         .WithMany("ChiTietHoaDons")
                         .HasForeignKey("MaHoaDon")
                         .IsRequired()
-<<<<<<< HEAD
-                        .HasConstraintName("FK__ChiTietHo__Ma_Ho__151B244E");
-=======
                         .HasConstraintName("FK__ChiTietHo__Ma_Ho__5629CD9C");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
                     b.HasOne("Nhom7_webTourdulich.Models.KhachHang", "MaKhachHangNavigation")
                         .WithMany("ChiTietHoaDons")
                         .HasForeignKey("MaKhachHang")
-                        .IsRequired()
-<<<<<<< HEAD
-                        .HasConstraintName("FK__ChiTietHo__Ma_Kh__160F4887");
-=======
-                        .HasConstraintName("FK__ChiTietHo__Ma_Kh__571DF1D5");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("MaHoaDonNavigation");
 
@@ -717,30 +613,21 @@ namespace Nhom7_webTourdulich.Migrations
                 {
                     b.HasOne("Nhom7_webTourdulich.Models.KhachHang", "MaKhachHangNavigation")
                         .WithMany("HoaDons")
-                        .HasForeignKey("MaKhachHang")
-                        .IsRequired()
-<<<<<<< HEAD
-                        .HasConstraintName("FK__HoaDon__Ma_Khach__10566F31");
-=======
-                        .HasConstraintName("FK__HoaDon__Ma_Khach__5165187F");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
+                        .HasForeignKey("MaKhachHangNavigationMaKhachHang")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("Nhom7_webTourdulich.Models.NhomTour", "MaNhomTourNavigation")
                         .WithMany("HoaDons")
                         .HasForeignKey("MaNhomTour")
                         .IsRequired()
-<<<<<<< HEAD
-                        .HasConstraintName("FK__HoaDon__Ma_Nhom___114A936A");
-=======
                         .HasConstraintName("FK__HoaDon__Ma_Nhom___52593CB8");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
                     b.Navigation("MaKhachHangNavigation");
 
                     b.Navigation("MaNhomTourNavigation");
                 });
 
-<<<<<<< HEAD
             modelBuilder.Entity("Nhom7_webTourdulich.Models.KhachHang", b =>
                 {
                     b.HasOne("Nhom7_webTourdulich.Models.Tour", "Tour")
@@ -750,19 +637,13 @@ namespace Nhom7_webTourdulich.Migrations
                     b.Navigation("Tour");
                 });
 
-=======
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
             modelBuilder.Entity("Nhom7_webTourdulich.Models.KhuyenMai", b =>
                 {
                     b.HasOne("Nhom7_webTourdulich.Models.GiaTour", "MaGiaTourNavigation")
                         .WithMany("KhuyenMais")
                         .HasForeignKey("MaGiaTour")
                         .IsRequired()
-<<<<<<< HEAD
-                        .HasConstraintName("FK__KhuyenMai__Ma_Gi__6C190EBB");
-=======
                         .HasConstraintName("FK__KhuyenMai__Ma_Gi__59FA5E80");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
                     b.Navigation("MaGiaTourNavigation");
                 });
@@ -773,11 +654,7 @@ namespace Nhom7_webTourdulich.Migrations
                         .WithMany("NhanViens")
                         .HasForeignKey("MaChucVu")
                         .IsRequired()
-<<<<<<< HEAD
-                        .HasConstraintName("FK__NhanVien__Ma_Chu__5812160E");
-=======
                         .HasConstraintName("FK__NhanVien__Ma_Chu__4316F928");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
                     b.Navigation("MaChucVuNavigation");
                 });
@@ -788,21 +665,13 @@ namespace Nhom7_webTourdulich.Migrations
                         .WithMany("NhomTours")
                         .HasForeignKey("MaTour")
                         .IsRequired()
-<<<<<<< HEAD
-                        .HasConstraintName("FK__NhomTour__Ma_Tou__0B91BA14");
-=======
                         .HasConstraintName("FK__NhomTour__Ma_Tou__4CA06362");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
                     b.HasOne("Nhom7_webTourdulich.Models.TrangThai", "MaTrangThaiNavigation")
                         .WithMany("NhomTours")
                         .HasForeignKey("MaTrangThai")
                         .IsRequired()
-<<<<<<< HEAD
-                        .HasConstraintName("FK__NhomTour__Ma_Tra__0C85DE4D");
-=======
                         .HasConstraintName("FK__NhomTour__Ma_Tra__4D94879B");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
                     b.Navigation("MaTourNavigation");
 
@@ -815,31 +684,19 @@ namespace Nhom7_webTourdulich.Migrations
                         .WithMany("Tours")
                         .HasForeignKey("MaDiemDen")
                         .IsRequired()
-<<<<<<< HEAD
-                        .HasConstraintName("FK__Tour__Ma_Diem_De__76969D2E");
-=======
                         .HasConstraintName("FK__Tour__Ma_Diem_De__49C3F6B7");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
                     b.HasOne("Nhom7_webTourdulich.Models.GiaTour", "MaGiaTourNavigation")
                         .WithMany("Tours")
                         .HasForeignKey("MaGiaTour")
                         .IsRequired()
-<<<<<<< HEAD
-                        .HasConstraintName("FK__Tour__Ma_Gia_Tou__75A278F5");
-=======
                         .HasConstraintName("FK__Tour__Ma_Gia_Tou__48CFD27E");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
                     b.HasOne("Nhom7_webTourdulich.Models.LoaiTour", "MaLoaiTourNavigation")
                         .WithMany("Tours")
                         .HasForeignKey("MaLoaiTour")
                         .IsRequired()
-<<<<<<< HEAD
-                        .HasConstraintName("FK__Tour__Ma_Loai_To__74AE54BC");
-=======
                         .HasConstraintName("FK__Tour__Ma_Loai_To__47DBAE45");
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
 
                     b.Navigation("MaDiemDenNavigation");
 
@@ -889,11 +746,8 @@ namespace Nhom7_webTourdulich.Migrations
 
             modelBuilder.Entity("Nhom7_webTourdulich.Models.Tour", b =>
                 {
-<<<<<<< HEAD
                     b.Navigation("KhachHangs");
 
-=======
->>>>>>> b5310ada0464d2eebf8d9a629d950c4f1ee8efa5
                     b.Navigation("NhomTours");
                 });
 

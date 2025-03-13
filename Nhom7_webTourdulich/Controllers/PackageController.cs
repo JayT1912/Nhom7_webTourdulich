@@ -17,9 +17,7 @@ public class PackageController : Controller
 
     public IActionResult Index()
     {
-        var tours = _quanLyTour.Tours.ToList();  
-        return View(tours);
-
+        
         var tours = _quanLyTour.Tours
             .Include(t => t.MaGiaTourNavigation)
             .Include(t => t.MaLoaiTourNavigation)

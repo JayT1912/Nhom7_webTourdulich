@@ -5,6 +5,7 @@ namespace Nhom7_webTourdulich.Models;
 
 public partial class ChiTietHoaDon
 {
+    
     public string MaHoaDon { get; set; } = null!;
 
     public int MaKhachHang { get; set; } 

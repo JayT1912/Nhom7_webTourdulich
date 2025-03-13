@@ -17,11 +17,6 @@ public partial class Tour
 
     public string SoNgay { get; set; }
 
-    public int SoNgay { get; set; }
-
-    public string? SoLuongNguoi { get; set; }
-
-    public string? HinhAnh { get; set; }
 
     public string? SoLuongNguoi { get; set; }
 
