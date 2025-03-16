@@ -7,7 +7,7 @@ public partial class HoaDon
 {
     public string MaHoaDon { get; set; } = null!;
 
-    public string MaKhachHang { get; set; } = null!;
+    public int MaKhachHang { get; set; } 
 
     public string MaNhomTour { get; set; } = null!;
 

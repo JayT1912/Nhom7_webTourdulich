@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 namespace Nhom7_webTourdulich.Models;
 
 public partial class KhuyenMai
 {
+     [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public string MaKhuyenMai { get; set; } = null!;
 
     public string TenKhuyenMai { get; set; } = null!;

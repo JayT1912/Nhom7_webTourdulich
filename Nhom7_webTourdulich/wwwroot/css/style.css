@@ -5,7 +5,12 @@
     --light: #F5F5F5;
     --dark: #14141F;
 }
-
+.img-fluid {
+    width: 336px; /* Chiều rộng cố định */
+    height: 336px; /* Chiều cao cố định */
+    object-fit: cover; /* Giữ tỷ lệ ảnh và cắt bớt phần thừa */
+    border-radius: 8px; /* Bo tròn góc nếu cần */
+}
 .fw-medium {
     font-weight: 600 !important;
 }
