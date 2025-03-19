@@ -1,19 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 namespace Nhom7_webTourdulich.Models;
 
 public partial class Tour
 {
-    public string MaTour { get; set; } = null!;
+     [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    public int MaTour { get; set; } 
 
     public string Ten { get; set; } = null!;
 
-    public string MaLoaiTour { get; set; } = null!;
+    public int MaLoaiTour { get; set; } 
 
-    public string MaGiaTour { get; set; } = null!;
-
-    public string MaDiemDen { get; set; } = null!;
+    public int MaGiaTour { get; set; } 
+    public int MaDiemDen { get; set; }
 
     public string SoNgay { get; set; }
 

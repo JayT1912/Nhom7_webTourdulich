@@ -652,13 +652,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Nhom7_webTourdulich.q5687kv8vs.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-0gcOTuKl1f\u002BFKY4ysAtX6J14eOXaEXpEcQiLobcVYGE="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1137"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00220gcOTuKl1f\u002BFKY4ysAtX6J14eOXaEXpEcQiLobcVYGE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 13 Mar 2025 08:56:09 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1137"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00220gcOTuKl1f\u002BFKY4ysAtX6J14eOXaEXpEcQiLobcVYGE=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 12:07:17 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Nhom7_webTourdulich/Nhom7_webTourdulich.q5687kv8vs.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Nhom7_webTourdulich.q5687kv8vs.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"q5687kv8vs"},{"Name":"integrity","Value":"sha256-0gcOTuKl1f\u002BFKY4ysAtX6J14eOXaEXpEcQiLobcVYGE="},{"Name":"label","Value":"_content/Nhom7_webTourdulich/Nhom7_webTourdulich.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1137"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00220gcOTuKl1f\u002BFKY4ysAtX6J14eOXaEXpEcQiLobcVYGE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 13 Mar 2025 08:56:09 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1137"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00220gcOTuKl1f\u002BFKY4ysAtX6J14eOXaEXpEcQiLobcVYGE=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 12:07:17 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Nhom7_webTourdulich/Template/css/main.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Template\css\main.css'))</AssetFile>

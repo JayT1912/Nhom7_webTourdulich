@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Nhom7_webTourdulich.Migrations
 {
     /// <inheritdoc />
-    public partial class AddUserTable : Migration
+    public partial class ThemDanhGia236 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -15,7 +15,8 @@ namespace Nhom7_webTourdulich.Migrations
                 name: "ChucVu",
                 columns: table => new
                 {
-                    Ma_Chuc_Vu = table.Column<string>(type: "varchar(20)", unicode: false, maxLength: 20, nullable: false),
+                    Ma_Chuc_Vu = table.Column<int>(type: "int", unicode: false, maxLength: 20, nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     Ten_Chuc_Vu = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false)
                 },
                 constraints: table =>
@@ -27,7 +28,8 @@ namespace Nhom7_webTourdulich.Migrations
                 name: "DiemDen",
                 columns: table => new
                 {
-                    Ma_Diem_Den = table.Column<string>(type: "varchar(20)", unicode: false, maxLength: 20, nullable: false),
+                    Ma_Diem_Den = table.Column<int>(type: "int", unicode: false, maxLength: 20, nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     Ten = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
                     Thanh_Pho = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false)
                 },
@@ -40,7 +42,8 @@ namespace Nhom7_webTourdulich.Migrations
                 name: "GiaTour",
                 columns: table => new
                 {
-                    Ma_Gia_Tour = table.Column<string>(type: "varchar(20)", unicode: false, maxLength: 20, nullable: false),
+                    Ma_Gia_Tour = table.Column<int>(type: "int", unicode: false, maxLength: 20, nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     Gia = table.Column<decimal>(type: "money", nullable: false),
                     Ngay_Bat_Dau = table.Column<DateOnly>(type: "date", nullable: false),
                     Ngay_Ket_Thuc = table.Column<DateOnly>(type: "date", nullable: false)
@@ -54,7 +57,8 @@ namespace Nhom7_webTourdulich.Migrations
                 name: "LoaiTour",
                 columns: table => new
                 {
-                    Ma_Loai_Tour = table.Column<string>(type: "varchar(20)", unicode: false, maxLength: 20, nullable: false),
+                    Ma_Loai_Tour = table.Column<int>(type: "int", unicode: false, maxLength: 20, nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     Ten_Loai_Tour = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false)
                 },
                 constraints: table =>
@@ -66,7 +70,8 @@ namespace Nhom7_webTourdulich.Migrations
                 name: "PhuongTien",
                 columns: table => new
                 {
-                    Ma_Phuong_Tien = table.Column<string>(type: "varchar(20)", unicode: false, maxLength: 20, nullable: false),
+                    Ma_Phuong_Tien = table.Column<int>(type: "int", unicode: false, maxLength: 20, nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     Ten = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
                     Trang_Thai = table.Column<string>(type: "varchar(20)", unicode: false, maxLength: 20, nullable: false)
                 },
@@ -97,7 +102,8 @@ namespace Nhom7_webTourdulich.Migrations
                 name: "TrangThai",
                 columns: table => new
                 {
-                    Ma_Trang_Thai = table.Column<string>(type: "varchar(20)", unicode: false, maxLength: 20, nullable: false),
+                    Ma_Trang_Thai = table.Column<int>(type: "int", unicode: false, maxLength: 20, nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     Ten_Trang_Thai = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false)
                 },
                 constraints: table =>
@@ -127,7 +133,7 @@ namespace Nhom7_webTourdulich.Migrations
                     Ma_Nhan_Vien = table.Column<int>(type: "int", unicode: false, maxLength: 20, nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Ten = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
-                    Ma_Chuc_Vu = table.Column<string>(type: "varchar(20)", unicode: false, maxLength: 20, nullable: false),
+                    Ma_Chuc_Vu = table.Column<int>(type: "int", unicode: false, maxLength: 20, nullable: false),
                     Hinh_Anh = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
                     LinkFB = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     LinkZL = table.Column<string>(type: "nvarchar(max)", nullable: true),
@@ -147,9 +153,10 @@ namespace Nhom7_webTourdulich.Migrations
                 name: "KhuyenMai",
                 columns: table => new
                 {
-                    Ma_Khuyen_Mai = table.Column<string>(type: "varchar(20)", unicode: false, maxLength: 20, nullable: false),
+                    Ma_Khuyen_Mai = table.Column<int>(type: "int", unicode: false, maxLength: 20, nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     Ten_Khuyen_Mai = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
-                    Ma_Gia_Tour = table.Column<string>(type: "varchar(20)", unicode: false, maxLength: 20, nullable: false),
+                    Ma_Gia_Tour = table.Column<int>(type: "int", unicode: false, maxLength: 20, nullable: false),
                     Phan_Tram_Giam = table.Column<double>(type: "float", nullable: true),
                     Gia_Giam = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
                     Ngay_Bat_Dau = table.Column<DateOnly>(type: "date", nullable: false),
@@ -169,11 +176,12 @@ namespace Nhom7_webTourdulich.Migrations
                 name: "Tour",
                 columns: table => new
                 {
-                    Ma_Tour = table.Column<string>(type: "varchar(20)", unicode: false, maxLength: 20, nullable: false),
+                    Ma_Tour = table.Column<int>(type: "int", unicode: false, maxLength: 20, nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     Ten = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
-                    Ma_Loai_Tour = table.Column<string>(type: "varchar(20)", unicode: false, maxLength: 20, nullable: false),
-                    Ma_Gia_Tour = table.Column<string>(type: "varchar(20)", unicode: false, maxLength: 20, nullable: false),
-                    Ma_Diem_Den = table.Column<string>(type: "varchar(20)", unicode: false, maxLength: 20, nullable: false),
+                    Ma_Loai_Tour = table.Column<int>(type: "int", unicode: false, maxLength: 20, nullable: false),
+                    Ma_Gia_Tour = table.Column<int>(type: "int", unicode: false, maxLength: 20, nullable: false),
+                    Ma_Diem_Den = table.Column<int>(type: "int", unicode: false, maxLength: 20, nullable: false),
                     So_Ngay = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     So_Luong_Nguoi = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
                     Hinh_Anh = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true)
@@ -211,7 +219,7 @@ namespace Nhom7_webTourdulich.Migrations
                     Gioi_Tinh = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
                     Quoc_Tich = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
                     Hinh_Anh = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
-                    MaTour = table.Column<string>(type: "varchar(20)", nullable: true)
+                    MaTour = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -227,12 +235,13 @@ namespace Nhom7_webTourdulich.Migrations
                 name: "NhomTour",
                 columns: table => new
                 {
-                    Ma_Nhom_Tour = table.Column<string>(type: "varchar(20)", unicode: false, maxLength: 20, nullable: false),
-                    Ma_Tour = table.Column<string>(type: "varchar(20)", unicode: false, maxLength: 20, nullable: false),
+                    Ma_Nhom_Tour = table.Column<int>(type: "int", unicode: false, maxLength: 20, nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Ma_Tour = table.Column<int>(type: "int", unicode: false, maxLength: 20, nullable: false),
                     Ngay_Khoi_Hanh = table.Column<DateOnly>(type: "date", nullable: false),
                     Ngay_Ket_Thuc = table.Column<DateOnly>(type: "date", nullable: false),
                     Diem_Xuat_Phat = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
-                    Ma_Trang_Thai = table.Column<string>(type: "varchar(20)", unicode: false, maxLength: 20, nullable: false),
+                    Ma_Trang_Thai = table.Column<int>(type: "int", unicode: false, maxLength: 20, nullable: false),
                     So_Luong_Nguoi = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
                     Noi_Dung = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
@@ -252,12 +261,34 @@ namespace Nhom7_webTourdulich.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "DanhGias",
+                columns: table => new
+                {
+                    MaDanhGia = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    NoiDung = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    NgayDanhGia = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Image = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    MaKhachHang = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_DanhGias", x => x.MaDanhGia);
+                    table.ForeignKey(
+                        name: "FK_DanhGias_KhachHang_MaKhachHang",
+                        column: x => x.MaKhachHang,
+                        principalTable: "KhachHang",
+                        principalColumn: "Ma_Khach_Hang",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "HoaDon",
                 columns: table => new
                 {
                     Ma_Hoa_Don = table.Column<string>(type: "varchar(20)", unicode: false, maxLength: 20, nullable: false),
                     Ma_Khach_Hang = table.Column<int>(type: "int", unicode: false, maxLength: 20, nullable: false),
-                    Ma_Nhom_Tour = table.Column<string>(type: "varchar(20)", unicode: false, maxLength: 20, nullable: false),
+                    Ma_Nhom_Tour = table.Column<int>(type: "int", unicode: false, maxLength: 20, nullable: false),
                     Ngay_Lap = table.Column<DateOnly>(type: "date", nullable: false),
                     Tong_Tien = table.Column<decimal>(type: "money", nullable: false),
                     Diem_Don = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
@@ -312,6 +343,11 @@ namespace Nhom7_webTourdulich.Migrations
                 name: "IX_ChiTietHoaDon_Ma_Khach_Hang",
                 table: "ChiTietHoaDon",
                 column: "Ma_Khach_Hang");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_DanhGias_MaKhachHang",
+                table: "DanhGias",
+                column: "MaKhachHang");
 
             migrationBuilder.CreateIndex(
                 name: "IX_HoaDon_Ma_Nhom_Tour",
@@ -369,6 +405,9 @@ namespace Nhom7_webTourdulich.Migrations
         {
             migrationBuilder.DropTable(
                 name: "ChiTietHoaDon");
+
+            migrationBuilder.DropTable(
+                name: "DanhGias");
 
             migrationBuilder.DropTable(
                 name: "KhuyenMai");

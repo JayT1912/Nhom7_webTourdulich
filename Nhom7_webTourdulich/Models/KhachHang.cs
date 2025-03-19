@@ -19,10 +19,11 @@ namespace Nhom7_webTourdulich.Models
         public string? HinhAnh { get; set; }
 
         [ForeignKey("Tour")]
-        public string? MaTour { get; set; }
+        public int? MaTour { get; set; }
         public virtual Tour? Tour { get; set; }
 
         public virtual ICollection<ChiTietHoaDon> ChiTietHoaDons { get; set; } = new List<ChiTietHoaDon>();
         public virtual ICollection<HoaDon> HoaDons { get; set; } = new List<HoaDon>();
+        public virtual ICollection<DanhGia> DanhGias { get; set; } = new List<DanhGia>();
     }
 }
