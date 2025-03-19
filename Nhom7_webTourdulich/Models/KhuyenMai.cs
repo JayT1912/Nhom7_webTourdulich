@@ -8,11 +8,11 @@ public partial class KhuyenMai
 {
      [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    public string MaKhuyenMai { get; set; } = null!;
+    public int MaKhuyenMai { get; set; } 
 
     public string TenKhuyenMai { get; set; } = null!;
 
-    public string MaGiaTour { get; set; } = null!;
+    public int MaGiaTour { get; set; }
 
     public double? PhanTramGiam { get; set; }
 

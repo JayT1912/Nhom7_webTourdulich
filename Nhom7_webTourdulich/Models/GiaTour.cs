@@ -8,7 +8,7 @@ public partial class GiaTour
 {
      [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    public string MaGiaTour { get; set; } 
+    public int MaGiaTour { get; set; } 
 
     public decimal Gia { get; set; }
 

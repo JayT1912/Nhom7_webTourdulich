@@ -30,6 +30,7 @@ public partial class QuanLyTourContext : DbContext
     public virtual DbSet<KhuyenMai> KhuyenMais { get; set; }
 
     public virtual DbSet<LoaiTour> LoaiTours { get; set; }
+    public virtual DbSet<DanhGia>  DanhGias { get; set; }
 
 
     public virtual DbSet<NhanVien> NhanViens { get; set; }

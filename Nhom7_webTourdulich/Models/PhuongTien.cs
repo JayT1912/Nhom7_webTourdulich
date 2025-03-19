@@ -8,7 +8,7 @@ public partial class PhuongTien
 {
      [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    public string MaPhuongTien { get; set; } = null!;
+    public int MaPhuongTien { get; set; }
 
     public string Ten { get; set; } = null!;
 

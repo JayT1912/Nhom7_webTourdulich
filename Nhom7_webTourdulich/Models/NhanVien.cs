@@ -13,8 +13,7 @@ public partial class NhanVien
 
     public string Ten { get; set; } = null!;
 
-    public string MaChucVu { get; set; } = null!;
-
+    public int MaChucVu { get; set; } 
     public string? HinhAnh { get; set; }
     public string? LinkFB { get; set; }
     public string? LinkZL { get; set; }
