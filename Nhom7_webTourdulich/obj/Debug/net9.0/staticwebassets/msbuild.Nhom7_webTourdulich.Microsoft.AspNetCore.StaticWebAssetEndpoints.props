@@ -184,13 +184,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Admin\css\main.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"6a07p2rj6s"},{"Name":"integrity","Value":"sha256-Lm4GDhJHcRt7QwjM09mhdKip0rSqQ/dhKdo0JK0LEXw="},{"Name":"label","Value":"_content/Nhom7_webTourdulich/Admin/css/main.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"18086"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Lm4GDhJHcRt7QwjM09mhdKip0rSqQ/dhKdo0JK0LEXw=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Mar 2025 07:30:46 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"18086"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Lm4GDhJHcRt7QwjM09mhdKip0rSqQ/dhKdo0JK0LEXw=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Mar 2025 07:40:05 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Nhom7_webTourdulich/Admin/css/main.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Admin\css\main.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Lm4GDhJHcRt7QwjM09mhdKip0rSqQ/dhKdo0JK0LEXw="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"18086"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Lm4GDhJHcRt7QwjM09mhdKip0rSqQ/dhKdo0JK0LEXw=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Mar 2025 07:30:46 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"18086"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Lm4GDhJHcRt7QwjM09mhdKip0rSqQ/dhKdo0JK0LEXw=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Mar 2025 07:40:05 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Nhom7_webTourdulich/Admin/css/register.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Admin\css\register.css'))</AssetFile>

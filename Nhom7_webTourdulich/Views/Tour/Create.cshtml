@@ -1,0 +1,62 @@
+@model Nhom7_webTourdulich.Models.Tour
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<body>
+<main>
+<h2>Thêm Mới Tour</h2>
+
+<form asp-action="Create" method="post" enctype="multipart/form-data">
+    <!-- Tour Name Input -->
+    <div class="form-group">
+        <label for="Ten">Tên Tour</label>
+        <input type="text" class="form-control" id="Ten" name="Ten" />
+    </div>
+
+    <!-- Manual Tour Type Input -->
+    <div class="form-group">
+        <label for="MaLoaiTour">Loại Tour</label>
+        <input type="text" class="form-control" id="MaLoaiTour" name="MaLoaiTour" placeholder="Nhập loại tour" />
+    </div>
+
+    <!-- Manual Tour Price Input -->
+    <div class="form-group">
+        <label for="Gia">Giá Tour</label>
+        <input type="number" class="form-control" id="Gia" name="Gia" placeholder="Nhập giá tour" />
+    </div>
+
+    <!-- Number of Days Input -->
+    <div class="form-group">
+        <label for="SoNgay">Số Ngày</label>
+        <input type="number" class="form-control" id="SoNgay" name="SoNgay" />
+    </div>
+
+    <!-- Available Quantity Input -->
+    <div class="form-group">
+        <label for="SoLuongNguoi">Số Lượng Người</label>
+        <input type="number" class="form-control" id="SoLuongNguoi" name="SoLuongNguoi" />
+    </div>
+
+    <!-- Image Input -->
+    <div class="form-group">
+        <label for="HinhAnh">Hình ảnh</label>
+        <input type="file" class="form-control" id="HinhAnh" name="HinhAnh" />
+    </div>
+
+    <!-- Start Date Input -->
+    <div class="form-group">
+        <label for="NgayBatDau">Ngày Bắt Đầu</label>
+        <input type="date" class="form-control" id="NgayBatDau" name="NgayBatDau" />
+    </div>
+
+    <!-- End Date Input -->
+    <div class="form-group">
+        <label for="NgayKetThuc">Ngày Kết Thúc</label>
+        <input type="date" class="form-control" id="NgayKetThuc" name="NgayKetThuc" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Thêm</button>
+</form>
+
+</body>
+</main>
