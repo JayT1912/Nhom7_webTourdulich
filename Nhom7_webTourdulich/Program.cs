@@ -2,14 +2,18 @@ using Microsoft.EntityFrameworkCore;
 using Nhom7_webTourdulich.Models;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30);  // Đặt thời gian timeout cho session
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
 builder.Services.AddSession(); // Thêm session
 builder.Services.AddAuthentication(); // Thêm xác thực
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<QuanLyTourContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

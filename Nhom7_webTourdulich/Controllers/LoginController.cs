@@ -33,7 +33,11 @@ public class LoginController : Controller
                 .FirstOrDefaultAsync(u => u.Username == user.Username);
             if (User != null && User.Password == user.Password) 
             {
-                HttpContext.Session.SetString("Username", User.Username);
+              HttpContext.Session.SetString("Username", user.Username);
+              HttpContext.Session.SetInt32("UserId", user.Id);
+
+
+            
                 return RedirectToAction("Index", "Home");
             }
             else
