@@ -5,6 +5,418 @@
       "PackagePath": "staticwebassets\\Nhom7_webTourdulich.q5687kv8vs.bundle.scp.css"
     },
     {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\bootstrap\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\Admin\\bootstrap\\css\\bootstrap.css"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\Admin\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\bootstrap\\fonts\\glyphicons-halflings-regular.eot",
+      "PackagePath": "staticwebassets\\Admin\\bootstrap\\fonts\\glyphicons-halflings-regular.eot"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\bootstrap\\fonts\\glyphicons-halflings-regular.svg",
+      "PackagePath": "staticwebassets\\Admin\\bootstrap\\fonts\\glyphicons-halflings-regular.svg"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\bootstrap\\fonts\\glyphicons-halflings-regular.ttf",
+      "PackagePath": "staticwebassets\\Admin\\bootstrap\\fonts\\glyphicons-halflings-regular.ttf"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\bootstrap\\fonts\\glyphicons-halflings-regular.woff",
+      "PackagePath": "staticwebassets\\Admin\\bootstrap\\fonts\\glyphicons-halflings-regular.woff"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\bootstrap\\fonts\\glyphicons-halflings-regular.woff2",
+      "PackagePath": "staticwebassets\\Admin\\bootstrap\\fonts\\glyphicons-halflings-regular.woff2"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\bootstrap\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\Admin\\bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\Admin\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\bootstrap.css"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\css\\flexslider.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\flexslider.css"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\css\\font-style.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\font-style.css"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\css\\fullcalendar.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\fullcalendar.css"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\css\\fullcalendar.print.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\fullcalendar.print.css"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\css\\login.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\login.css"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\css\\main.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\main.css"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\css\\register.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\register.css"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\css\\table.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\table.css"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\font-awesome\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\Admin\\font-awesome\\css\\font-awesome.css"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\font-awesome\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\Admin\\font-awesome\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\font-awesome\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\Admin\\font-awesome\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\font-awesome\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\Admin\\font-awesome\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\font-awesome\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\Admin\\font-awesome\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\font-awesome\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\Admin\\font-awesome\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\font-awesome\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\Admin\\font-awesome\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\font-awesome\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\Admin\\font-awesome\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\font-awesome\\less\\bordered-pulled.less",
+      "PackagePath": "staticwebassets\\Admin\\font-awesome\\less\\bordered-pulled.less"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\font-awesome\\less\\core.less",
+      "PackagePath": "staticwebassets\\Admin\\font-awesome\\less\\core.less"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\font-awesome\\less\\fixed-width.less",
+      "PackagePath": "staticwebassets\\Admin\\font-awesome\\less\\fixed-width.less"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\font-awesome\\less\\font-awesome.less",
+      "PackagePath": "staticwebassets\\Admin\\font-awesome\\less\\font-awesome.less"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\font-awesome\\less\\icons.less",
+      "PackagePath": "staticwebassets\\Admin\\font-awesome\\less\\icons.less"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\font-awesome\\less\\larger.less",
+      "PackagePath": "staticwebassets\\Admin\\font-awesome\\less\\larger.less"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\font-awesome\\less\\list.less",
+      "PackagePath": "staticwebassets\\Admin\\font-awesome\\less\\list.less"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\font-awesome\\less\\mixins.less",
+      "PackagePath": "staticwebassets\\Admin\\font-awesome\\less\\mixins.less"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\font-awesome\\less\\path.less",
+      "PackagePath": "staticwebassets\\Admin\\font-awesome\\less\\path.less"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\font-awesome\\less\\rotated-flipped.less",
+      "PackagePath": "staticwebassets\\Admin\\font-awesome\\less\\rotated-flipped.less"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\font-awesome\\less\\spinning.less",
+      "PackagePath": "staticwebassets\\Admin\\font-awesome\\less\\spinning.less"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\font-awesome\\less\\stacked.less",
+      "PackagePath": "staticwebassets\\Admin\\font-awesome\\less\\stacked.less"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\font-awesome\\less\\variables.less",
+      "PackagePath": "staticwebassets\\Admin\\font-awesome\\less\\variables.less"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\font-awesome\\scss\\_bordered-pulled.scss",
+      "PackagePath": "staticwebassets\\Admin\\font-awesome\\scss\\_bordered-pulled.scss"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\font-awesome\\scss\\_core.scss",
+      "PackagePath": "staticwebassets\\Admin\\font-awesome\\scss\\_core.scss"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\font-awesome\\scss\\_fixed-width.scss",
+      "PackagePath": "staticwebassets\\Admin\\font-awesome\\scss\\_fixed-width.scss"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\font-awesome\\scss\\_icons.scss",
+      "PackagePath": "staticwebassets\\Admin\\font-awesome\\scss\\_icons.scss"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\font-awesome\\scss\\_larger.scss",
+      "PackagePath": "staticwebassets\\Admin\\font-awesome\\scss\\_larger.scss"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\font-awesome\\scss\\_list.scss",
+      "PackagePath": "staticwebassets\\Admin\\font-awesome\\scss\\_list.scss"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\font-awesome\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\Admin\\font-awesome\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\font-awesome\\scss\\_path.scss",
+      "PackagePath": "staticwebassets\\Admin\\font-awesome\\scss\\_path.scss"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\font-awesome\\scss\\_rotated-flipped.scss",
+      "PackagePath": "staticwebassets\\Admin\\font-awesome\\scss\\_rotated-flipped.scss"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\font-awesome\\scss\\_spinning.scss",
+      "PackagePath": "staticwebassets\\Admin\\font-awesome\\scss\\_spinning.scss"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\font-awesome\\scss\\_stacked.scss",
+      "PackagePath": "staticwebassets\\Admin\\font-awesome\\scss\\_stacked.scss"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\font-awesome\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\Admin\\font-awesome\\scss\\_variables.scss"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\font-awesome\\scss\\font-awesome.scss",
+      "PackagePath": "staticwebassets\\Admin\\font-awesome\\scss\\font-awesome.scss"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\images\\bg.JPG",
+      "PackagePath": "staticwebassets\\Admin\\images\\bg.JPG"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\images\\down-small.png",
+      "PackagePath": "staticwebassets\\Admin\\images\\down-small.png"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\images\\down.png",
+      "PackagePath": "staticwebassets\\Admin\\images\\down.png"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\images\\face.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\face.jpg"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\images\\face36x36.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\face36x36.jpg"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\images\\face80x80.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\face80x80.jpg"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\images\\glyphicons-halflings-white.png",
+      "PackagePath": "staticwebassets\\Admin\\images\\glyphicons-halflings-white.png"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\images\\glyphicons-halflings.png",
+      "PackagePath": "staticwebassets\\Admin\\images\\glyphicons-halflings.png"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\images\\logo.png",
+      "PackagePath": "staticwebassets\\Admin\\images\\logo.png"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\images\\logo30.png",
+      "PackagePath": "staticwebassets\\Admin\\images\\logo30.png"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\images\\photo01.jpeg",
+      "PackagePath": "staticwebassets\\Admin\\images\\photo01.jpeg"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\images\\photo02.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\photo02.jpg"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\images\\photo03.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\photo03.jpg"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\images\\photo04.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\photo04.jpg"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\images\\sep-half.png",
+      "PackagePath": "staticwebassets\\Admin\\images\\sep-half.png"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\images\\slide01.png",
+      "PackagePath": "staticwebassets\\Admin\\images\\slide01.png"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\images\\slide02.png",
+      "PackagePath": "staticwebassets\\Admin\\images\\slide02.png"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\images\\up-small.png",
+      "PackagePath": "staticwebassets\\Admin\\images\\up-small.png"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\images\\up.png",
+      "PackagePath": "staticwebassets\\Admin\\images\\up.png"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\images\\user-avatar.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\user-avatar.jpg"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\js\\admin.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\admin.js"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\bootstrap.js"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\js\\dash-charts.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\dash-charts.js"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\js\\dash-noty.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\dash-noty.js"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\js\\datatables\\jquery.dataTables.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\datatables\\jquery.dataTables.js"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\js\\datatables\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\datatables\\jquery.dataTables.min.js"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\js\\fullcalendar.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\fullcalendar.js"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\js\\fullcalendar.min.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\fullcalendar.min.js"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\js\\gauge.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\gauge.js"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\js\\gcal.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\gcal.js"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\js\\highcharts.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\highcharts.js"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\js\\jquery-ui-1.8.23.custom.min.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\jquery-ui-1.8.23.custom.min.js"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\js\\jquery.flexslider.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\jquery.flexslider.js"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\js\\jquery.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\jquery.js"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\js\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\jquery.validate.js"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\js\\lineandbars.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\lineandbars.js"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\js\\noty\\jquery.noty.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\noty\\jquery.noty.js"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\js\\noty\\layouts\\bottom.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\noty\\layouts\\bottom.js"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\js\\noty\\layouts\\bottomCenter.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\noty\\layouts\\bottomCenter.js"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\js\\noty\\layouts\\bottomLeft.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\noty\\layouts\\bottomLeft.js"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\js\\noty\\layouts\\bottomRight.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\noty\\layouts\\bottomRight.js"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\js\\noty\\layouts\\center.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\noty\\layouts\\center.js"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\js\\noty\\layouts\\centerLeft.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\noty\\layouts\\centerLeft.js"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\js\\noty\\layouts\\centerRight.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\noty\\layouts\\centerRight.js"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\js\\noty\\layouts\\inline.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\noty\\layouts\\inline.js"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\js\\noty\\layouts\\top.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\noty\\layouts\\top.js"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\js\\noty\\layouts\\topCenter.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\noty\\layouts\\topCenter.js"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\js\\noty\\layouts\\topLeft.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\noty\\layouts\\topLeft.js"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\js\\noty\\layouts\\topRight.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\noty\\layouts\\topRight.js"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\js\\noty\\promise.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\noty\\promise.js"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Admin\\js\\noty\\themes\\default.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\noty\\themes\\default.js"
+    },
+    {
       "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\Template\\css\\main.css",
       "PackagePath": "staticwebassets\\Template\\css\\main.css"
     },
@@ -417,6 +829,10 @@
       "PackagePath": "staticwebassets\\Template\\vendor\\select2\\select2.min.js"
     },
     {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\css\\Admin.css",
+      "PackagePath": "staticwebassets\\css\\Admin.css"
+    },
+    {
       "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },
@@ -427,6 +843,26 @@
     {
       "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\images\\123.jpg",
+      "PackagePath": "staticwebassets\\images\\123.jpg"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\images\\AVT.jpg",
+      "PackagePath": "staticwebassets\\images\\AVT.jpg"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\images\\OIP.jpg",
+      "PackagePath": "staticwebassets\\images\\OIP.jpg"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\images\\user-2.png",
+      "PackagePath": "staticwebassets\\images\\user-2.png"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\images\\user-3.png",
+      "PackagePath": "staticwebassets\\images\\user-3.png"
     },
     {
       "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\about.jpg",
@@ -459,6 +895,10 @@
     {
       "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\destination-4.jpg",
       "PackagePath": "staticwebassets\\img\\destination-4.jpg"
+    },
+    {
+      "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\icon_User.jpg",
+      "PackagePath": "staticwebassets\\img\\icon_User.jpg"
     },
     {
       "Id": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\package-1.jpg",

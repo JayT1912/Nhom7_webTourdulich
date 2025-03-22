@@ -43,6 +43,8 @@ public partial class QuanLyTourContext : DbContext
 
     public virtual DbSet<Register> Registers { get; set; }
 
+    public virtual DbSet<UserImage> UserImages {get; set;}
+
     public virtual DbSet<User> Users {get; set;}
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

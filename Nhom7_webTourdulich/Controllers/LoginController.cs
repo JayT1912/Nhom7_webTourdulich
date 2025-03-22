@@ -2,6 +2,8 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Nhom7_webTourdulich.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace Nhom7_webTourdulich.Controllers;
 
@@ -45,6 +47,14 @@ public class LoginController : Controller
         return View(user); 
     }
 
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            
+            HttpContext.Session.Clear();
+
+            return RedirectToAction("Index", "Home");
+        }
 
     public IActionResult Privacy()
     {
