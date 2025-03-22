@@ -7,15 +7,21 @@ public partial class HoaDon
 {
     public string MaHoaDon { get; set; } = null!;
 
-    public string MaKhachHang { get; set; } = null!;
+    public int MaKhachHang { get; set; } 
 
-    public string MaNhomTour { get; set; } = null!;
+    public int MaNhomTour { get; set; }
 
-    public string NgayLap { get; set; } = null!;
+    public DateOnly NgayLap { get; set; }
 
-    public string TongTien { get; set; } = null!;
+    public decimal TongTien { get; set; }
 
-    public string DaThanhToan { get; set; } = null!;
+    public string DiemDon { get; set; } = null!;
+
+    public DateOnly NgayDi { get; set; }
+
+    public TimeOnly GioDi { get; set; }
+
+    public string ThanhToan { get; set; } = null!;
 
     public virtual ICollection<ChiTietHoaDon> ChiTietHoaDons { get; set; } = new List<ChiTietHoaDon>();
 

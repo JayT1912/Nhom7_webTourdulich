@@ -1,17 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 namespace Nhom7_webTourdulich.Models;
 
 public partial class GiaTour
 {
-    public string MaGiaTour { get; set; } = null!;
+     [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    public int MaGiaTour { get; set; } 
 
-    public string Gia { get; set; } = null!;
+    public decimal Gia { get; set; }
 
-    public string NgayBatDau { get; set; } = null!;
+    public DateOnly NgayBatDau { get; set; }
 
-    public string NgayKetThuc { get; set; } = null!;
+    public DateOnly NgayKetThuc { get; set; }
 
     public virtual ICollection<KhuyenMai> KhuyenMais { get; set; } = new List<KhuyenMai>();
 

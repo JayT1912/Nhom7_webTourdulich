@@ -1,23 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 namespace Nhom7_webTourdulich.Models;
 
 public partial class KhuyenMai
 {
-    public string MaKhuyenMai { get; set; } = null!;
+     [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    public int MaKhuyenMai { get; set; } 
 
     public string TenKhuyenMai { get; set; } = null!;
 
-    public string MaGiaTour { get; set; } = null!;
+    public int MaGiaTour { get; set; }
 
-    public string? PhanTramGiam { get; set; }
+    public double? PhanTramGiam { get; set; }
 
     public string? GiaGiam { get; set; }
 
-    public string NgayBatDau { get; set; } = null!;
+    public DateOnly NgayBatDau { get; set; }
 
-    public string NgayKetThuc { get; set; } = null!;
+    public DateOnly NgayKetThuc { get; set; }
 
     public virtual GiaTour MaGiaTourNavigation { get; set; } = null!;
 }
