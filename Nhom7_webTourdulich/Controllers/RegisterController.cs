@@ -32,8 +32,8 @@ namespace Nhom7_webTourdulich.Controllers
                     Username = register.Username,
                     Password = register.Password 
                 };
-                _quanLyTour.Users.Add(newUser); 
-                _quanLyTour.Registers.Add(register);  
+                 _quanLyTour.Users.Add(newUser); 
+                 _quanLyTour.Registers.Add(register);  
                 await _quanLyTour.SaveChangesAsync(); 
 
                 return RedirectToAction("Index", "Home");

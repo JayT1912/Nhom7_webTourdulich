@@ -30,10 +30,10 @@ namespace Nhom7_webTourdulich.Migrations
                         .HasColumnType("varchar(20)")
                         .HasColumnName("Ma_Hoa_Don");
 
-                    b.Property<string>("MaKhachHang")
+                    b.Property<int>("MaKhachHang")
                         .HasMaxLength(20)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(20)")
+                        .HasColumnType("int")
                         .HasColumnName("Ma_Khach_Hang");
 
                     b.Property<decimal>("GiaTour")
@@ -62,11 +62,14 @@ namespace Nhom7_webTourdulich.Migrations
 
             modelBuilder.Entity("Nhom7_webTourdulich.Models.ChucVu", b =>
                 {
-                    b.Property<string>("MaChucVu")
+                    b.Property<int>("MaChucVu")
+                        .ValueGeneratedOnAdd()
                         .HasMaxLength(20)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(20)")
+                        .HasColumnType("int")
                         .HasColumnName("Ma_Chuc_Vu");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaChucVu"));
 
                     b.Property<string>("TenChucVu")
                         .IsRequired()
@@ -80,13 +83,48 @@ namespace Nhom7_webTourdulich.Migrations
                     b.ToTable("ChucVu", (string)null);
                 });
 
+            modelBuilder.Entity("Nhom7_webTourdulich.Models.DanhGia", b =>
+                {
+                    b.Property<int>("MaDanhGia")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaDanhGia"));
+
+                    b.Property<int>("MaTour")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("NgayDanhGia")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("NoiDung")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("SoSao")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("MaDanhGia");
+
+                    b.HasIndex("MaTour");
+
+                    b.ToTable("DanhGias");
+                });
+
             modelBuilder.Entity("Nhom7_webTourdulich.Models.DiemDen", b =>
                 {
-                    b.Property<string>("MaDiemDen")
+                    b.Property<int>("MaDiemDen")
+                        .ValueGeneratedOnAdd()
                         .HasMaxLength(20)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(20)")
+                        .HasColumnType("int")
                         .HasColumnName("Ma_Diem_Den");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaDiemDen"));
 
                     b.Property<string>("Ten")
                         .IsRequired()
@@ -107,11 +145,14 @@ namespace Nhom7_webTourdulich.Migrations
 
             modelBuilder.Entity("Nhom7_webTourdulich.Models.GiaTour", b =>
                 {
-                    b.Property<string>("MaGiaTour")
+                    b.Property<int>("MaGiaTour")
+                        .ValueGeneratedOnAdd()
                         .HasMaxLength(20)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(20)")
+                        .HasColumnType("int")
                         .HasColumnName("Ma_Gia_Tour");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaGiaTour"));
 
                     b.Property<decimal>("Gia")
                         .HasColumnType("money");
@@ -148,18 +189,19 @@ namespace Nhom7_webTourdulich.Migrations
                         .HasColumnType("time")
                         .HasColumnName("Gio_Di");
 
-                    b.Property<string>("MaKhachHang")
-                        .IsRequired()
+                    b.Property<int>("MaKhachHang")
                         .HasMaxLength(20)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(20)")
+                        .HasColumnType("int")
                         .HasColumnName("Ma_Khach_Hang");
 
-                    b.Property<string>("MaNhomTour")
-                        .IsRequired()
+                    b.Property<int>("MaKhachHangNavigationMaKhachHang")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MaNhomTour")
                         .HasMaxLength(20)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(20)")
+                        .HasColumnType("int")
                         .HasColumnName("Ma_Nhom_Tour");
 
                     b.Property<DateOnly>("NgayDi")
@@ -184,7 +226,7 @@ namespace Nhom7_webTourdulich.Migrations
                     b.HasKey("MaHoaDon")
                         .HasName("PK__HoaDon__91EF063FFF61E16D");
 
-                    b.HasIndex("MaKhachHang");
+                    b.HasIndex("MaKhachHangNavigationMaKhachHang");
 
                     b.HasIndex("MaNhomTour");
 
@@ -193,11 +235,14 @@ namespace Nhom7_webTourdulich.Migrations
 
             modelBuilder.Entity("Nhom7_webTourdulich.Models.KhachHang", b =>
                 {
-                    b.Property<string>("MaKhachHang")
+                    b.Property<int>("MaKhachHang")
+                        .ValueGeneratedOnAdd()
                         .HasMaxLength(20)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(20)")
+                        .HasColumnType("int")
                         .HasColumnName("Ma_Khach_Hang");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaKhachHang"));
 
                     b.Property<string>("DiaChi")
                         .IsRequired()
@@ -221,6 +266,9 @@ namespace Nhom7_webTourdulich.Migrations
                         .HasColumnType("nvarchar(255)")
                         .HasColumnName("Hinh_Anh");
 
+                    b.Property<int?>("MaTour")
+                        .HasColumnType("int");
+
                     b.Property<string>("QuocTich")
                         .IsRequired()
                         .HasMaxLength(255)
@@ -241,27 +289,31 @@ namespace Nhom7_webTourdulich.Migrations
                     b.HasKey("MaKhachHang")
                         .HasName("PK__KhachHan__37BB3C420E78E4C3");
 
+                    b.HasIndex("MaTour");
+
                     b.ToTable("KhachHang", (string)null);
                 });
 
             modelBuilder.Entity("Nhom7_webTourdulich.Models.KhuyenMai", b =>
                 {
-                    b.Property<string>("MaKhuyenMai")
+                    b.Property<int>("MaKhuyenMai")
+                        .ValueGeneratedOnAdd()
                         .HasMaxLength(20)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(20)")
+                        .HasColumnType("int")
                         .HasColumnName("Ma_Khuyen_Mai");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaKhuyenMai"));
 
                     b.Property<string>("GiaGiam")
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)")
                         .HasColumnName("Gia_Giam");
 
-                    b.Property<string>("MaGiaTour")
-                        .IsRequired()
+                    b.Property<int>("MaGiaTour")
                         .HasMaxLength(20)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(20)")
+                        .HasColumnType("int")
                         .HasColumnName("Ma_Gia_Tour");
 
                     b.Property<DateOnly>("NgayBatDau")
@@ -292,11 +344,14 @@ namespace Nhom7_webTourdulich.Migrations
 
             modelBuilder.Entity("Nhom7_webTourdulich.Models.LoaiTour", b =>
                 {
-                    b.Property<string>("MaLoaiTour")
+                    b.Property<int>("MaLoaiTour")
+                        .ValueGeneratedOnAdd()
                         .HasMaxLength(20)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(20)")
+                        .HasColumnType("int")
                         .HasColumnName("Ma_Loai_Tour");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaLoaiTour"));
 
                     b.Property<string>("TenLoaiTour")
                         .IsRequired()
@@ -312,22 +367,33 @@ namespace Nhom7_webTourdulich.Migrations
 
             modelBuilder.Entity("Nhom7_webTourdulich.Models.NhanVien", b =>
                 {
-                    b.Property<string>("MaNhanVien")
+                    b.Property<int>("MaNhanVien")
+                        .ValueGeneratedOnAdd()
                         .HasMaxLength(20)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(20)")
+                        .HasColumnType("int")
                         .HasColumnName("Ma_Nhan_Vien");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaNhanVien"));
 
                     b.Property<string>("HinhAnh")
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)")
                         .HasColumnName("Hinh_Anh");
 
-                    b.Property<string>("MaChucVu")
-                        .IsRequired()
+                    b.Property<string>("LinkFB")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LinkIG")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LinkZL")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("MaChucVu")
                         .HasMaxLength(20)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(20)")
+                        .HasColumnType("int")
                         .HasColumnName("Ma_Chuc_Vu");
 
                     b.Property<string>("Ten")
@@ -345,11 +411,14 @@ namespace Nhom7_webTourdulich.Migrations
 
             modelBuilder.Entity("Nhom7_webTourdulich.Models.NhomTour", b =>
                 {
-                    b.Property<string>("MaNhomTour")
+                    b.Property<int>("MaNhomTour")
+                        .ValueGeneratedOnAdd()
                         .HasMaxLength(20)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(20)")
+                        .HasColumnType("int")
                         .HasColumnName("Ma_Nhom_Tour");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaNhomTour"));
 
                     b.Property<string>("DiemXuatPhat")
                         .IsRequired()
@@ -357,18 +426,16 @@ namespace Nhom7_webTourdulich.Migrations
                         .HasColumnType("nvarchar(255)")
                         .HasColumnName("Diem_Xuat_Phat");
 
-                    b.Property<string>("MaTour")
-                        .IsRequired()
+                    b.Property<int>("MaTour")
                         .HasMaxLength(20)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(20)")
+                        .HasColumnType("int")
                         .HasColumnName("Ma_Tour");
 
-                    b.Property<string>("MaTrangThai")
-                        .IsRequired()
+                    b.Property<int>("MaTrangThai")
                         .HasMaxLength(20)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(20)")
+                        .HasColumnType("int")
                         .HasColumnName("Ma_Trang_Thai");
 
                     b.Property<DateOnly>("NgayKetThuc")
@@ -400,11 +467,14 @@ namespace Nhom7_webTourdulich.Migrations
 
             modelBuilder.Entity("Nhom7_webTourdulich.Models.PhuongTien", b =>
                 {
-                    b.Property<string>("MaPhuongTien")
+                    b.Property<int>("MaPhuongTien")
+                        .ValueGeneratedOnAdd()
                         .HasMaxLength(20)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(20)")
+                        .HasColumnType("int")
                         .HasColumnName("Ma_Phuong_Tien");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaPhuongTien"));
 
                     b.Property<string>("Ten")
                         .IsRequired()
@@ -462,45 +532,44 @@ namespace Nhom7_webTourdulich.Migrations
 
             modelBuilder.Entity("Nhom7_webTourdulich.Models.Tour", b =>
                 {
-                    b.Property<string>("MaTour")
+                    b.Property<int>("MaTour")
+                        .ValueGeneratedOnAdd()
                         .HasMaxLength(20)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(20)")
+                        .HasColumnType("int")
                         .HasColumnName("Ma_Tour");
 
-                    b.Property<string>("HinhAnh")
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)")
-                        .HasColumnName("Hinh_Anh");
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaTour"));
 
-                    b.Property<string>("MaDiemDen")
-                        .IsRequired()
+                    b.Property<int>("MaDiemDen")
                         .HasMaxLength(20)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(20)")
+                        .HasColumnType("int")
                         .HasColumnName("Ma_Diem_Den");
 
-                    b.Property<string>("MaGiaTour")
-                        .IsRequired()
+                    b.Property<int>("MaGiaTour")
                         .HasMaxLength(20)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(20)")
+                        .HasColumnType("int")
                         .HasColumnName("Ma_Gia_Tour");
 
-                    b.Property<string>("MaLoaiTour")
-                        .IsRequired()
+                    b.Property<int>("MaLoaiTour")
                         .HasMaxLength(20)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(20)")
+                        .HasColumnType("int")
                         .HasColumnName("Ma_Loai_Tour");
+
+                    b.Property<string>("MoTa")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("SoLuongNguoi")
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)")
                         .HasColumnName("So_Luong_Nguoi");
 
-                    b.Property<int>("SoNgay")
-                        .HasColumnType("int")
+                    b.Property<string>("SoNgay")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)")
                         .HasColumnName("So_Ngay");
 
                     b.Property<string>("Ten")
@@ -520,13 +589,41 @@ namespace Nhom7_webTourdulich.Migrations
                     b.ToTable("Tour", (string)null);
                 });
 
+            modelBuilder.Entity("Nhom7_webTourdulich.Models.TourImage", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("HinhAnh")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("MaTour")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TourMaTour")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TourMaTour");
+
+                    b.ToTable("TourImage");
+                });
+
             modelBuilder.Entity("Nhom7_webTourdulich.Models.TrangThai", b =>
                 {
-                    b.Property<string>("MaTrangThai")
+                    b.Property<int>("MaTrangThai")
+                        .ValueGeneratedOnAdd()
                         .HasMaxLength(20)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(20)")
+                        .HasColumnType("int")
                         .HasColumnName("Ma_Trang_Thai");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaTrangThai"));
 
                     b.Property<string>("TenTrangThai")
                         .IsRequired()
@@ -627,21 +724,32 @@ namespace Nhom7_webTourdulich.Migrations
                     b.HasOne("Nhom7_webTourdulich.Models.KhachHang", "MaKhachHangNavigation")
                         .WithMany("ChiTietHoaDons")
                         .HasForeignKey("MaKhachHang")
-                        .IsRequired()
-                        .HasConstraintName("FK__ChiTietHo__Ma_Kh__571DF1D5");
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("MaHoaDonNavigation");
 
                     b.Navigation("MaKhachHangNavigation");
                 });
 
+            modelBuilder.Entity("Nhom7_webTourdulich.Models.DanhGia", b =>
+                {
+                    b.HasOne("Nhom7_webTourdulich.Models.Tour", "Tour")
+                        .WithMany("DanhGias")
+                        .HasForeignKey("MaTour")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Tour");
+                });
+
             modelBuilder.Entity("Nhom7_webTourdulich.Models.HoaDon", b =>
                 {
                     b.HasOne("Nhom7_webTourdulich.Models.KhachHang", "MaKhachHangNavigation")
                         .WithMany("HoaDons")
-                        .HasForeignKey("MaKhachHang")
-                        .IsRequired()
-                        .HasConstraintName("FK__HoaDon__Ma_Khach__5165187F");
+                        .HasForeignKey("MaKhachHangNavigationMaKhachHang")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("Nhom7_webTourdulich.Models.NhomTour", "MaNhomTourNavigation")
                         .WithMany("HoaDons")
@@ -652,6 +760,15 @@ namespace Nhom7_webTourdulich.Migrations
                     b.Navigation("MaKhachHangNavigation");
 
                     b.Navigation("MaNhomTourNavigation");
+                });
+
+            modelBuilder.Entity("Nhom7_webTourdulich.Models.KhachHang", b =>
+                {
+                    b.HasOne("Nhom7_webTourdulich.Models.Tour", "Tour")
+                        .WithMany("KhachHangs")
+                        .HasForeignKey("MaTour");
+
+                    b.Navigation("Tour");
                 });
 
             modelBuilder.Entity("Nhom7_webTourdulich.Models.KhuyenMai", b =>
@@ -722,6 +839,17 @@ namespace Nhom7_webTourdulich.Migrations
                     b.Navigation("MaLoaiTourNavigation");
                 });
 
+            modelBuilder.Entity("Nhom7_webTourdulich.Models.TourImage", b =>
+                {
+                    b.HasOne("Nhom7_webTourdulich.Models.Tour", "Tour")
+                        .WithMany("TourImages")
+                        .HasForeignKey("TourMaTour")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Tour");
+                });
+
             modelBuilder.Entity("Nhom7_webTourdulich.Models.UserImage", b =>
                 {
                     b.HasOne("Nhom7_webTourdulich.Models.User", "User")
@@ -774,7 +902,13 @@ namespace Nhom7_webTourdulich.Migrations
 
             modelBuilder.Entity("Nhom7_webTourdulich.Models.Tour", b =>
                 {
+                    b.Navigation("DanhGias");
+
+                    b.Navigation("KhachHangs");
+
                     b.Navigation("NhomTours");
+
+                    b.Navigation("TourImages");
                 });
 
             modelBuilder.Entity("Nhom7_webTourdulich.Models.TrangThai", b =>

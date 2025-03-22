@@ -11,6 +11,14 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Register IUserRepository with EFUserRepository
 builder.Services.AddScoped<IUserRepository, EFUserRepository>();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30);  // Đặt thời gian timeout cho session
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+builder.Services.AddSession(); // Thêm session
+builder.Services.AddAuthentication(); // Thêm xác thực
 
 // Add DbContext and configure connection string for SQL Server
 builder.Services.AddDbContext<QuanLyTourContext>(options =>
