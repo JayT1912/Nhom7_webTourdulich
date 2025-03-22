@@ -17,7 +17,7 @@ namespace Nhom7_webTourdulich.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "9.0.2")
+                .HasAnnotation("ProductVersion", "9.0.3")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -645,12 +645,42 @@ namespace Nhom7_webTourdulich.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Password")
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DateOfBirth")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("Remember")
-                        .HasColumnType("bit");
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
+
+                    b.Property<string>("Role")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Username")
                         .IsRequired()
@@ -659,6 +689,28 @@ namespace Nhom7_webTourdulich.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("Nhom7_webTourdulich.Models.UserImage", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Url")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("UserImages");
                 });
 
             modelBuilder.Entity("Nhom7_webTourdulich.Models.ChiTietHoaDon", b =>
@@ -798,6 +850,17 @@ namespace Nhom7_webTourdulich.Migrations
                     b.Navigation("Tour");
                 });
 
+            modelBuilder.Entity("Nhom7_webTourdulich.Models.UserImage", b =>
+                {
+                    b.HasOne("Nhom7_webTourdulich.Models.User", "User")
+                        .WithMany("UserImages")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Nhom7_webTourdulich.Models.ChucVu", b =>
                 {
                     b.Navigation("NhanViens");
@@ -851,6 +914,11 @@ namespace Nhom7_webTourdulich.Migrations
             modelBuilder.Entity("Nhom7_webTourdulich.Models.TrangThai", b =>
                 {
                     b.Navigation("NhomTours");
+                });
+
+            modelBuilder.Entity("Nhom7_webTourdulich.Models.User", b =>
+                {
+                    b.Navigation("UserImages");
                 });
 #pragma warning restore 612, 618
         }

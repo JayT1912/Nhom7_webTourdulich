@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\Nhom7_webTourdulich.csproj": {}
+    "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\Nhom7_webTourdulich.csproj": {}
   },
   "projects": {
-    "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\Nhom7_webTourdulich.csproj": {
+    "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\Nhom7_webTourdulich.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\Nhom7_webTourdulich.csproj",
+        "projectUniqueName": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\Nhom7_webTourdulich.csproj",
         "projectName": "Nhom7_webTourdulich",
-        "projectPath": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\Nhom7_webTourdulich.csproj",
-        "packagesPath": "C:\\Users\\KIET\\.nuget\\packages\\",
-        "outputPath": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\obj\\",
+        "projectPath": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\Nhom7_webTourdulich.csproj",
+        "packagesPath": "C:\\Users\\chith\\.nuget\\packages\\",
+        "outputPath": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\KIET\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\chith\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -58,21 +58,61 @@
               "target": "Package",
               "version": "[2.0.2, )"
             },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.11.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.Cookies": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.3.1, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[9.0.3, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[9.0.3, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[9.0.3, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "SendGrid": {
+              "target": "Package",
+              "version": "[9.29.3, )"
             }
           },
           "imports": [
@@ -94,7 +134,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
