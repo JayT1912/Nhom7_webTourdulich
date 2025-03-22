@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\Nhom7_webTourdulich.csproj": {}
+    "M:\\OBS\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\Nhom7_webTourdulich.csproj": {}
   },
   "projects": {
-    "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\Nhom7_webTourdulich.csproj": {
+    "M:\\OBS\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\Nhom7_webTourdulich.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\Nhom7_webTourdulich.csproj",
+        "projectUniqueName": "M:\\OBS\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\Nhom7_webTourdulich.csproj",
         "projectName": "Nhom7_webTourdulich",
-        "projectPath": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\Nhom7_webTourdulich.csproj",
+        "projectPath": "M:\\OBS\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\Nhom7_webTourdulich.csproj",
         "packagesPath": "C:\\Users\\chith\\.nuget\\packages\\",
-        "outputPath": "M:\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\obj\\",
+        "outputPath": "M:\\OBS\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

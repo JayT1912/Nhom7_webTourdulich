@@ -12,7 +12,7 @@ using Nhom7_webTourdulich.Models;
 namespace Nhom7_webTourdulich.Migrations
 {
     [DbContext(typeof(QuanLyTourContext))]
-    [Migration("20250320075438_AddUserTable")]
+    [Migration("20250322091837_AddUserTable")]
     partial class AddUserTable
     {
         /// <inheritdoc />
