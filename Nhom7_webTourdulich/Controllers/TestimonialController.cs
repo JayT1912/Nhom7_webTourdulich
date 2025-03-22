@@ -9,7 +9,7 @@ namespace Nhom7_webTourdulich.Controllers
     {
         private readonly QuanLyTourContext _context;
 
-        public TestimonialController (QuanLyTourContext context)
+        public TestimonialController(QuanLyTourContext context)
         {
             _context = context;
         }
@@ -17,10 +17,12 @@ namespace Nhom7_webTourdulich.Controllers
         // GET: DanhGia
         public IActionResult Index()
         {
+            // Lấy danh sách đánh giá và bao gồm thông tin Tour (không cần KhachHang)
             var danhGias = _context.DanhGias
-        .Include(d => d.KhachHang) // Bao gồm thông tin khách hàng
-        .ToList();
-          return View(danhGias);
+                .Include(d => d.Tour) // Bao gồm thông tin tour
+                .ToList();
+            
+            return View(danhGias);
         }
 
         // GET: DanhGia/Create
@@ -34,12 +36,23 @@ namespace Nhom7_webTourdulich.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(DanhGia danhGia)
         {
+            // Lấy Username từ Session
+            var username = HttpContext.Session.GetString("Username");
+            if (string.IsNullOrEmpty(username))
+            {
+                return RedirectToAction("Index", "Login"); // Chuyển hướng nếu chưa đăng nhập
+            }
+
+            // Gán Username vào đối tượng DanhGia
+            danhGia.Username = username;
+
             if (ModelState.IsValid)
             {
                 _context.DanhGias.Add(danhGia);
                 _context.SaveChanges();
                 return RedirectToAction(nameof(Index));
             }
+
             return View(danhGia);
         }
 
@@ -57,12 +70,23 @@ namespace Nhom7_webTourdulich.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Edit(DanhGia danhGia)
         {
+            // Lấy Username từ Session để đảm bảo tính xác thực
+            var username = HttpContext.Session.GetString("Username");
+            if (string.IsNullOrEmpty(username))
+            {
+                return RedirectToAction("Index", "Login"); // Chuyển hướng nếu chưa đăng nhập
+            }
+
+            // Gán lại Username từ session trước khi lưu
+            danhGia.Username = username;
+
             if (ModelState.IsValid)
             {
                 _context.DanhGias.Update(danhGia);
                 _context.SaveChanges();
                 return RedirectToAction(nameof(Index));
             }
+
             return View(danhGia);
         }
 
@@ -86,6 +110,7 @@ namespace Nhom7_webTourdulich.Controllers
                 _context.DanhGias.Remove(danhGia);
                 _context.SaveChanges();
             }
+
             return RedirectToAction(nameof(Index));
         }
     }

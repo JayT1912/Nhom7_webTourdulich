@@ -24,6 +24,5 @@ namespace Nhom7_webTourdulich.Models
 
         public virtual ICollection<ChiTietHoaDon> ChiTietHoaDons { get; set; } = new List<ChiTietHoaDon>();
         public virtual ICollection<HoaDon> HoaDons { get; set; } = new List<HoaDon>();
-        public virtual ICollection<DanhGia> DanhGias { get; set; } = new List<DanhGia>();
     }
 }

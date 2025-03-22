@@ -30,6 +30,7 @@ public partial class QuanLyTourContext : DbContext
     public virtual DbSet<KhuyenMai> KhuyenMais { get; set; }
 
     public virtual DbSet<LoaiTour> LoaiTours { get; set; }
+    
     public virtual DbSet<DanhGia>  DanhGias { get; set; }
 
 
@@ -376,9 +377,6 @@ public partial class QuanLyTourContext : DbContext
                 .HasMaxLength(20)
                 .IsUnicode(false)
                 .HasColumnName("Ma_Tour");
-            entity.Property(e => e.HinhAnh)
-                .HasMaxLength(255)
-                .HasColumnName("Hinh_Anh");
             entity.Property(e => e.MaDiemDen)
                 .HasMaxLength(20)
                 .IsUnicode(false)

@@ -421,6 +421,10 @@
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },
     {
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\css\\dataTables.bootstrap5.min.css",
+      "PackagePath": "staticwebassets\\css\\dataTables.bootstrap5.min.css"
+    },
+    {
       "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },
@@ -431,10 +435,6 @@
     {
       "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\about.jpg",
       "PackagePath": "staticwebassets\\img\\about.jpg"
-    },
-    {
-      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\anhtrangchu.jpg",
-      "PackagePath": "staticwebassets\\img\\anhtrangchu.jpg"
     },
     {
       "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\bg-hero.jpg",
@@ -459,18 +459,6 @@
     {
       "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\destination-4.jpg",
       "PackagePath": "staticwebassets\\img\\destination-4.jpg"
-    },
-    {
-      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\kiet.jpg",
-      "PackagePath": "staticwebassets\\img\\kiet.jpg"
-    },
-    {
-      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\loc.jpg",
-      "PackagePath": "staticwebassets\\img\\loc.jpg"
-    },
-    {
-      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\nhung.jpg",
-      "PackagePath": "staticwebassets\\img\\nhung.jpg"
     },
     {
       "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\package-1.jpg",
@@ -517,16 +505,12 @@
       "PackagePath": "staticwebassets\\img\\testimonial-4.jpg"
     },
     {
-      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\thanh.jpg",
-      "PackagePath": "staticwebassets\\img\\thanh.jpg"
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\js\\jquery-3.6.0.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.6.0.min.js"
     },
     {
-      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\z.png",
-      "PackagePath": "staticwebassets\\img\\z.png"
-    },
-    {
-      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\img\\zalo1.png",
-      "PackagePath": "staticwebassets\\img\\zalo1.png"
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\js\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.dataTables.min.js"
     },
     {
       "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\js\\main.js",
@@ -615,6 +599,10 @@
     {
       "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.min.js",
       "PackagePath": "staticwebassets\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.min.js"
+    },
+    {
+      "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\vi.json",
+      "PackagePath": "staticwebassets\\lib\\vi.json"
     },
     {
       "Id": "C:\\DoAnWEBBBBBB\\Nhom7_webTourdulich\\Nhom7_webTourdulich\\wwwroot\\lib\\waypoints\\links.php",
