@@ -129,7 +129,7 @@ public async Task<IActionResult> Update(int id, User user, IFormFile avatar)
         }
 
         // Cập nhật các thông tin khác của người dùng
-        existingUser.Name = user.Name;
+        existingUser.FullName = user.FullName;
         existingUser.Email = user.Email;
         existingUser.Username = user.Username;
         existingUser.DateOfBirth = user.DateOfBirth;  // Cập nhật Ngày sinh
