@@ -1,23 +1,33 @@
-using System;
+﻿using System.ComponentModel.DataAnnotations;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-namespace Nhom7_webTourdulich.Models;
-public partial class User
+
+namespace Nhom7_webTourdulich.Models
+{
+    public class User
     {
-     [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    public int Id { get; set; }
+        [Key]
+        public int Id { get; set; }
+        [Required, StringLength(50)]
+        public string Name { get; set; }
+        [Required, EmailAddress]
+        public string Email { get; set; }
+        [Required]
+        public string Username {get; set;}  
+        [Required, StringLength(100)]
+        public string Password { get; set; }
+        public string Role { get; set; }
+        [Required]
+        public DateTime DateOfBirth { get; set; } // Ngày sinh
 
-    [Required(ErrorMessage = "Vui lòng nhập tên đăng nhập")]
-    [Display(Name = "Tên đăng nhập")]
-    public string Username { get; set; }
+        [StringLength(200)]
+        public string Address { get; set; } // Địa chỉ
 
-    [Required(ErrorMessage = "Vui lòng nhập mật khẩu")]
-    [DataType(DataType.Password)]
-    [Display(Name = "Mật khẩu")]
-    public string Password { get; set; }
+        [StringLength(15)]
+        public string PhoneNumber { get; set; } // Số điện thoại
 
-    public bool Remember { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow; // Ngày tạo tài khoản
+        public string? ImageUrl { get; set; }
+        public List<UserImage>? UserImages { get; set; }
     }
+
+}
