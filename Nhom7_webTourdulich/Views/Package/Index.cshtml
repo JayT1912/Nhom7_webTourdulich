@@ -3,7 +3,7 @@
 
 <div class="container-xxl py-5">
     <div class="container">
-        <!-- Tiêu đề và từ khóa tìm kiếm -->
+        <!-- Tiêu đề -->
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
             <h6 class="section-title bg-white text-center text-primary px-3">Gói Tour</h6>
             <h1 class="mb-3">Khám Phá Thế Giới Cùng Chúng Tôi</h1>
@@ -22,12 +22,14 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="package-item shadow-sm border tour-card">
                             <!-- Hình ảnh -->
-                            <img src="@tour.TourImages?.FirstOrDefault()?.HinhAnh ?? "/images/default-image.jpg"" class="img-fluid w-100" alt="@tour.Ten" style="height: 200px; object-fit: cover;">
-                            
+                            <img src="@tour.TourImages?.FirstOrDefault()?.HinhAnh " 
+                                 class="img-fluid w-100 rounded-top" 
+                                 alt="@tour.MaDiemDenNavigation.Ten" 
+                                 style="height: 200px; object-fit: cover;">
                             <!-- Nội dung -->
                             <div class="text-center p-4">
                                 <h5 class="mb-2 text-primary">@tour.Ten</h5>
-                                <h3 class="mb-2 text-success">@tour.MaGiaTourNavigation.Gia.ToString("C")</h3>
+                                <h3 class="mb-2 text-success">@String.Format("{0:0,0}", tour.MaGiaTourNavigation.Gia).Replace(",", ".") VND</h3>
                                 <p class="text-warning">
                                     @if (tour.DanhGias != null && tour.DanhGias.Any())
                                     {
@@ -40,7 +42,7 @@
                                         <span>Chưa có đánh giá</span>
                                     }
                                 </p>
-                                <p>
+                                <p class="text-muted">
                                     @if (!string.IsNullOrEmpty(tour.MoTa) && tour.MoTa.Length > 50)
                                     {
                                         @string.Concat(tour.MoTa.Substring(0, 50), "...")
@@ -80,14 +82,12 @@
                         <a class="page-link btn-custom" href="@Url.Action("Index", new { query = ViewBag.Query, page = ViewBag.CurrentPage - 1 })">Trước</a>
                     </li>
                 }
-
                 @for (int i = 1; i <= ViewBag.TotalPages; i++)
                 {
                     <li class="page-item @(i == ViewBag.CurrentPage ? "active" : "")">
                         <a class="page-link btn-custom" href="@Url.Action("Index", new { query = ViewBag.Query, page = i })">@i</a>
                     </li>
                 }
-
                 @if (ViewBag.CurrentPage < ViewBag.TotalPages)
                 {
                     <li class="page-item">

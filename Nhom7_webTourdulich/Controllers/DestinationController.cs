@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Nhom7_webTourdulich.Models;
 
 namespace Nhom7_webTourdulich.Controllers;
@@ -14,10 +15,18 @@ public class DestinationController : Controller
         _logger = logger;
         _quanLyTour = quanLyTour;
     }
-    public IActionResult Index()
-    {
-        return View();
-    }
+  public IActionResult Index()
+{  
+    var tours = _quanLyTour.Tours
+        .Include(t => t.TourImages)
+        .Include(t => t.MaDiemDenNavigation)
+        .Include(t => t.MaGiaTourNavigation)
+        .Include(t => t.DanhGias)
+        .AsQueryable();
+
+    return View(tours);
+}
+
 
     public IActionResult Privacy()
     {
