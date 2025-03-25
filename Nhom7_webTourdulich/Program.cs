@@ -81,6 +81,6 @@ app.UseSession();         // Enable session management
 // Configure default route for MVC controllers
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Admin}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();  // Run the application
