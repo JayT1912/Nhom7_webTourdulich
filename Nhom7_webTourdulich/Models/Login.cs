@@ -5,10 +5,10 @@ using System.ComponentModel.DataAnnotations;
 namespace Nhom7_webTourdulich.Models;
 
 
-public class LoginModel
+public class Login
 {
     [Key]
-    public string id {get ; set;}
+    public int id {get ; set;}
 
     [Required(ErrorMessage = "Username is required")]
     [Display(Name = "Username")]

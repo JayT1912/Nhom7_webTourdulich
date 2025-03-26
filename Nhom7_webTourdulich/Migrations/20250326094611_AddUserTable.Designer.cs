@@ -12,8 +12,8 @@ using Nhom7_webTourdulich.Models;
 namespace Nhom7_webTourdulich.Migrations
 {
     [DbContext(typeof(QuanLyTourContext))]
-    [Migration("20250323065419_AddUserTabl")]
-    partial class AddUserTabl
+    [Migration("20250326094611_AddUserTable")]
+    partial class AddUserTable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -368,6 +368,30 @@ namespace Nhom7_webTourdulich.Migrations
                     b.ToTable("LoaiTour", (string)null);
                 });
 
+            modelBuilder.Entity("Nhom7_webTourdulich.Models.Login", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("RememberMe")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.ToTable("Logins");
+                });
+
             modelBuilder.Entity("Nhom7_webTourdulich.Models.NhanVien", b =>
                 {
                     b.Property<int>("MaNhanVien")
@@ -666,8 +690,7 @@ namespace Nhom7_webTourdulich.Migrations
 
                     b.Property<string>("Address")
                         .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
@@ -681,8 +704,7 @@ namespace Nhom7_webTourdulich.Migrations
 
                     b.Property<string>("FullName")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImageUrl")
                         .HasColumnType("nvarchar(max)");
@@ -694,8 +716,7 @@ namespace Nhom7_webTourdulich.Migrations
 
                     b.Property<string>("PhoneNumber")
                         .IsRequired()
-                        .HasMaxLength(15)
-                        .HasColumnType("nvarchar(15)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Role")
                         .IsRequired()
