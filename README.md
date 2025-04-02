@@ -3,7 +3,9 @@
 
 
 📝 Lời Nói Đầu
-Chào mừng bạn đến với dự án Website Quản Lý Tour Du Lịch! Đây là một ứng dụng web được phát triển để giúp các công ty du lịch quản lý và điều hành các tour du lịch, khách hàng, và các dịch vụ liên quan. Mục tiêu của dự án là cung cấp một giải pháp đơn giản, hiệu quả và dễ sử dụng cho việc quản lý tour du lịch trực tuyến.
+
+Chào mừng bạn đến với dự án Website Quản Lý Tour Du Lịch! Đây là một ứng dụng web được phát triển để giúp các công ty du lịch quản lý và điều hành các tour du lịch, khách hàng, và các dịch vụ liên quan.
+Mục tiêu của dự án là cung cấp một giải pháp đơn giản, hiệu quả và dễ sử dụng cho việc quản lý tour du lịch trực tuyến.
 Trong dự án này, chúng tôi đã sử dụng ASP.NET Core với mô hình MVC (Model-View-Controller) để xây dựng ứng dụng, với backend được phát triển bằng C#. Các công nghệ frontend bao gồm HTML, CSS, và JavaScript giúp tạo ra giao diện người dùng thân thiện và dễ dàng tương tác.
 Dự án này không chỉ giúp khách hàng dễ dàng tìm kiếm và đăng ký các tour du lịch phù hợp mà còn giúp các công ty du lịch quản lý thông tin khách hàng, đặt tour, và thanh toán một cách hiệu quả.
 Chúng tôi hy vọng rằng dự án này sẽ mang lại giá trị và sự tiện lợi cho người dùng, đồng thời là một nền tảng vững chắc để phát triển thêm các tính năng trong tương lai.
