@@ -34,7 +34,7 @@ https://github.com/JayT1912/Nhom7_webTourdulich.git
 dotnet watch
 
 🚀 **Tác giả**  
-Lê Tuấn Kiệt - Developer  
-Phạm Lâm Minh Lộc - Developer  
-Nguyễn Thị Thùy Nhung - Developer  
-Phạm Cao Chí Thành - Developer 
+- Lê Tuấn Kiệt - Developer  
+- Phạm Lâm Minh Lộc - Developer  
+- Nguyễn Thị Thùy Nhung - Developer  
+- Phạm Cao Chí Thành - Developer 
