@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhóm Tour Theo Tour</title>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Tour</title>
+    <link rel="stylesheet" href="~/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/js/main.js"></script>
+    <!-- CSS DataTables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+    
+    <!-- CSS tùy chỉnh -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            color: #333;
+        }
+
+        h2 {
+            color: #1a73e8;
+            margin: 10px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .table-container {
+            margin: 20px auto;
+            width: 90%;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+
+    <!-- Thư viện jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Thư viện DataTables -->
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+    <h1>Nhóm Tour Theo Tour</h1>
+    
+    @foreach (var group in Model)
+    {
+        <div class="table-container">
+            <h2>Mã Tour: @group.MaTour</h2>
+            <table id="table-@group.MaTour" class="display">
+                <thead>
+                    <tr>
+                        <th>Mã Nhóm</th>
+                        <th>Ngày Khởi Hành</th>
+                        <th>Ngày Kết Thúc</th>
+                        <th>Điểm Xuất Phát</th>
+                        <th>Số Lượng Người</th>
+                        <th>Nội Dung</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var nhomTour in group.NhomTours)
+                    {
+                        <tr>
+                            <td>@nhomTour.MaNhomTour</td>
+                            <td>@nhomTour.NgayKhoiHanh.ToString("yyyy-MM-dd")</td>
+                            <td>@nhomTour.NgayKetThuc.ToString("yyyy-MM-dd")</td>
+                            <td>@Html.Raw(nhomTour.DiemXuatPhat)</td>
+                            <td>@Html.Raw(nhomTour.SoLuongNguoi)</td>
+                            <td>@Html.Raw(nhomTour.NoiDung)</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+
+    <script>
+        $(document).ready(function () {
+            // Khởi tạo DataTable cho mỗi bảng
+            $('table.display').DataTable({
+                paging: true, // Phân trang
+                searching: true, // Tìm kiếm
+                ordering: true, // Sắp xếp
+                language: {
+                    url: "https://cdn.datatables.net/plug-ins/1.11.5/i18n/Vietnamese.json" // Ngôn ngữ tiếng Việt
+                }
+            });
+        });
+    </script>
+</body>
+</html>

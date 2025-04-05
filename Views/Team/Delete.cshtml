@@ -1,0 +1,42 @@
+@model Nhom7_webTourdulich.Models.NhanVien
+@{
+    Layout = "_LayoutAdmin";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/style.css">
+    <title>Delete Employee</title>
+</head>
+<body>
+    <main>
+        <div class="container mt-5"></div>
+        <div class="card shadow-lg border-0">
+            <div class="card-header bg-danger text-white text-center">
+                <h2>Delete Employee</h2>
+            </div>
+            <div class="card-body">
+                <p>Are you sure you want to delete this employee?</p>
+                <h4 class="text-primary">@Model.Ten</h4>
+                <p><strong>Role:</strong> @Model.MaChucVuNavigation?.TenChucVu</p>
+                @if (!string.IsNullOrEmpty(Model.HinhAnh))
+                {
+                    <div>
+                        <img src="@Model.HinhAnh" alt="@Model.Ten" class="img-thumbnail" style="max-width: 150px;">
+                    </div>
+                }
+                <form asp-action="DeleteConfirmed" method="post" enctype="multipart/form-data">
+                    <input type="hidden" asp-for="MaNhanVien" />
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn btn-danger px-4">Delete</button>
+                        <a asp-action="IndexAdmin" class="btn btn-secondary px-4">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,206 @@
+@model IEnumerable<Nhom7_webTourdulich.Models.NhanVien>
+@using Microsoft.AspNetCore.Http
+@{
+    Layout = "_LayoutAdmin";
+}
+<body>
+    <main>
+
+        <!-- Main Content -->
+        <div class="content p-4 flex-grow-1">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h1 class="text-primary">Quản Lý Nhân Viên</h1>
+ <p>
+                <a class="btn btn-primary" href="@Url.Action("Create", "Team")">Create New</a>
+            </p>            </div>
+            <table class="table table-hover table-striped">
+                <thead class="bg-primary text-white">
+                    <tr>
+                        <th scope="col" class="text-center">Hình Ảnh</th>
+                        <th scope="col">Họ Tên</th>
+                        <th scope="col">Chức Vụ</th>
+                        <th scope="col" class="text-center">Facebook</th>
+                        <th scope="col" class="text-center">Zalo</th>
+                        <th scope="col" class="text-center">Instagram</th>
+                        <th scope="col" class="text-center">Hành Động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null && Model.Any())
+                    {
+                        @foreach (var nv in Model)
+                        {
+                            <tr>
+                                <td class="text-center">
+                                    @if (!string.IsNullOrEmpty(nv.HinhAnh))
+                                    {
+                                        <img src="@nv.HinhAnh" alt="Hình Nhân Viên" class="rounded-circle" style="width: 50px; height: 50px; object-fit: cover;">
+                                    }
+                                    else
+                                    {
+                                        <img src="/img/default.jpg" alt="Default Image" class="rounded-circle" style="width: 50px; height: 50px; object-fit: cover;">
+                                    }
+                                </td>
+                                <td>@nv.Ten</td>
+                                <td>@nv.MaChucVuNavigation?.TenChucVu</td>
+                                <td class="text-center">
+                                    @if (!string.IsNullOrEmpty(nv.LinkFB))
+                                    {
+                                        <a href="@nv.LinkFB" target="_blank" class="btn btn-primary btn-sm">Facebook</a>
+                                    }
+                                    else
+                                    {
+                                        <span>-</span>
+                                    }
+                                </td>
+                                <td class="text-center">
+                                    @if (!string.IsNullOrEmpty(nv.LinkZL))
+                                    {
+                                        <a href="@nv.LinkZL" target="_blank" class="btn btn-success btn-sm">Zalo</a>
+                                    }
+                                    else
+                                    {
+                                        <span>-</span>
+                                    }
+                                </td>
+                                <td class="text-center">
+                                    @if (!string.IsNullOrEmpty(nv.LinkIG))
+                                    {
+                                        <a href="@nv.LinkIG" target="_blank" class="btn btn-danger btn-sm">Instagram</a>
+                                    }
+                                    else
+                                    {
+                                        <span>-</span>
+                                    }
+                                </td>
+                                <td class="text-center">
+                                    <a href="@Url.Action("Edit", "Team", new { id = nv.MaNhanVien })" class="btn btn-warning btn-sm">Sửa</a>
+<form action="@Url.Action("DeleteConfirmed", "Team", new { id = nv.MaNhanVien })" method="post" style="display:inline;">
+    <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Bạn có chắc muốn xóa?')">Xóa</button>
+</form>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="7" class="text-center">Không có nhân viên nào trong danh sách.</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </main>
+</body>
+</html>
+<style>
+    .btn-warning {
+    background-color: #ffc107;
+    border: 1px solid #ffc107;
+    color: white; /* Ensures text is visible */
+    font-weight: bold; /* Makes the text appear bold */
+    font-size: 14px; /* Adjusts font size slightly */
+    border-radius: 5px; /* Adds rounded corners */
+    padding: 7px 15px; /* Adjusts size for better appearance */
+    transition: background-color 0.3s ease; /* Adds hover effect */
+}
+
+.btn-warning:hover {
+    background-color: #e0a800; /* Slightly darker on hover */
+    border-color: #e0a800;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: 1px solid #dc3545;
+    color: white; /* Ensures text is visible */
+    font-weight: bold; /* Makes the text appear bold */
+    font-size: 14px; /* Adjusts font size slightly */
+    border-radius: 5px; /* Adds rounded corners */
+    padding: 7px 15px; /* Adjusts size for better appearance */
+    transition: background-color 0.3s ease; /* Adds hover effect */
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Slightly darker on hover */
+    border-color: #c82333;
+}
+
+    /* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sidebar .nav-link {
+    font-size: 16px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Main Content Styling */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+/* Table Styling */
+.table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.table img {
+    border-radius: 50%;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+.btn {
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.btn-primary {
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    color: white; /* Ensures text is white */
+    font-weight: bold; /* Makes the text appear bold */
+    font-size: 16px; /* Adjusts font size for a larger button */
+    border-radius: 5px; /* Softens button edges */
+    padding: 10px 20px; /* Increases size for a more prominent look */
+    transition: background-color 0.3s ease; /* Adds smooth hover effect */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Changes color slightly on hover for interaction */
+}
+
+</style>

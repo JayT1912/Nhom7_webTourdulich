@@ -1,0 +1,51 @@
+﻿@{
+    Layout = "~/Views/Shared/_layoutChungLR.cshtml";
+}
+
+<body>
+    <div class="limiter">
+        <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+            <div class="wrap-login100">
+                <!-- Đảm bảo thẻ form được đóng đúng cách -->
+                <form asp-controller="Account" asp-action="Login" method="post" class="login100-form validate-form">
+                    <span class="login100-form-logo">
+                        <i class="zmdi zmdi-landscape"></i>
+                    </span>
+
+                    <span class="login100-form-title p-b-34 p-t-27">
+                        Log in
+                    </span>
+
+                    <!-- Hiển thị lỗi từ ModelState -->
+                    <div asp-validation-summary="All" class="text-danger"></div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Username</label>
+                        <input type="text" name="username" class="form-control" placeholder="Username..." required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input type="password" name="password" class="form-control" placeholder="Password..." required />
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">Login</button>
+
+                    <!-- Đảm bảo các link như "Quên mật khẩu?" và "Đăng ký?" không nằm trong form -->
+                    <div class="text-center p-t-90">
+                        <a class="txt1" href="@Url.Action("ForgotPassword", "Password")">
+                            Quên mật khẩu?
+                        </a>
+
+                        <span class="txt1"> &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;</span>
+
+                        <a class="txt1" href="@Url.Action("Index", "Register")">
+                            Đăng ký?
+                        </a>
+                    </div>
+                </form> <!-- Đảm bảo form đã đóng đúng cách -->
+            </div>
+        </div>
+    </div>
+    <div id="dropDownSelect1"></div>
+</body>

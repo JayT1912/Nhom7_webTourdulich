@@ -1,0 +1,222 @@
+﻿﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VietTravel</title>
+    <link rel="stylesheet" type="text/css" href="~/styles/css/main_style.css">
+    <link rel="stylesheet" type="text/css" href="~/styles/css/Animation.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script>
+        window.onscroll = function () {
+            scrollFunction(),
+                backTop()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 35 || document.documentElement.scrollTop > 35) {
+                $(document).ready(function () {
+                    $(".top_bar").hide('slow');
+                });
+
+            } else {
+                $(document).ready(function () {
+                    $(".top_bar").show();
+                });
+            }
+        }
+
+        $(function () {
+            $("#tabs").tabs();
+        });
+
+        $(document).ready(function () {
+            $(".search__item").click(function () {
+                $(".input_search").toggle("slow");
+            });
+        })
+    </script>
+</head>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('img/background.jpg'); /* Hình nền cho trang */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+
+        /* Thanh menu */
+        .main_nav {
+            position: fixed; /* Đặt vị trí cố định */
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(255, 255, 255, 0.7); /* Màu nền trong suốt */
+            backdrop-filter: blur(10px); /* Làm mờ nền phía sau */
+            padding: 15px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000; /* Đảm bảo thanh menu nằm trên cùng */
+        }
+
+        .main_nav__logo a {
+            text-decoration: none;
+            color: #333; /* Màu chữ cho logo */
+            font-weight: bold;
+        }
+
+        .main_nav__menu {
+            display: flex;
+            justify-content: center;
+        }
+
+        .main_nav__list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .main_nav__item {
+            margin: 0 15px; /* Khoảng cách giữa các mục */
+        }
+
+        .main_nav__item a {
+            text-decoration: none; /* Bỏ gạch chân */
+            color: #333; /* Màu chữ */
+            font-weight: bold;
+        }
+
+        .main_nav__item a:hover {
+            color: #3AA83A; /* Màu chữ khi hover */
+        }
+
+        /* Nội dung trang */
+        .content {
+            padding-top: 80px; /* Để tránh nội dung bị che bởi thanh menu */
+            text-align: center;
+            color: white;
+        }
+    </style>
+        <div class="main_nav">
+
+            <div class="main_nav__menu">
+                <ul class="main_nav__list">
+                <li class="main_nav__item"><a href="@Url.Action("Index", "Home")">Trang Chủ | </a></li>
+                <li class="main_nav__item"><a href="@Url.Action("Index", "About")">Thông Tin | </a></li>
+                <li class="main_nav__item"><a href="@Url.Action("Index", "Service")">Dịch Vụ | </a></li>
+                <li class="main_nav__item"><a href="@Url.Action("QQ", "Package")">Gói | </a></li>  
+                <li class="main_nav__item"><a href="@Url.Action("Create", "KhachHang")">Booking | </a></li>
+                <li class="main_nav__item"><a href="@Url.Action("Index", "Team")">Travel Guides | </a></li>
+                <li class="main_nav__item"><a href="@Url.Action("QQ", "Password")">Testimonial | </a></li>
+            </ul>
+                    </div>
+            </div>
+            <div class="main_nav__search">
+                <form action=""><input class="input_search" type="text"></form>
+                <div class="search__item"><i class="fas fa-search"></i></div>
+            </div>
+    </header>
+@RenderBody()
+    <footer class="footer">
+        <button onclick="topFunction()" id="back_top" title="Go to top"><i class="fas fa-rocket"></i></button>
+        <div class="box footer__box">
+            <div class="footer__about">
+                <div class="footer__logo">
+                    <div class="logo">
+                        <a href="#"><img src="styles/images/logo.png" alt="">VIETTRAVEL</a>
+                    </div>
+                </div>
+                <p class="footer_about__text">
+                    VietTravel tự hào là một đơn vị tiêu biểu trong lĩnh vực tour du lịch đón nhận giải thưởng uy tín
+                    nhất dành cho cộng đồng doanh nghiệp Việt Nam.
+                </p>
+                <ul class="footer_social_list">
+                    <li class="footer_social_item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="footer_social_item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="footer_social_item"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer__blog">
+                <div class="footer_title">bản tin</div>
+                <div class="footer_blog__item">
+                    <div class="footer_blog__image"><img src="styles/images/footer_blog_1.jpg" alt=""></div>
+                    <div class="footer_blog__content">
+                        <div class="footer_blog__title"><a href="#">Địa điểm du lịch Hè 2021</a></div>
+                        <div class="footer_blog__date">30/04/2021</div>
+                    </div>
+                </div>
+                <div class="footer_blog__item">
+                    <div class="footer_blog__image"><img src="styles/images/footer_blog_1.jpg" alt=""></div>
+                    <div class="footer_blog__content">
+                        <div class="footer_blog__title"><a href="#">Địa điểm du lịch Hè 2021</a></div>
+                        <div class="footer_blog__date">30/04/2021</div>
+                    </div>
+                </div>
+                <div class="footer_blog__item">
+                    <div class="footer_blog__image"><img src="styles/images/footer_blog_1.jpg" alt=""></div>
+                    <div class="footer_blog__content">
+                        <div class="footer_blog__title"><a href="#">Địa điểm du lịch Hè 2021</a></div>
+                        <div class="footer_blog__date">30/04/2021</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__tags">
+                <div class="footer_title">Tags</div>
+                <ul class="tags_list">
+                    <li class="tags_item"><a href="#">Miền Bắc</a></li>
+                    <li class="tags_item"><a href="#">Miền Trung</a></li>
+                    <li class="tags_item"><a href="#">Miền Nam</a></li>
+                    <li class="tags_item"><a href="#">Đà Nẵng</a></li>
+                    <li class="tags_item"><a href="#">Quảng Nam</a></li>
+                    <li class="tags_item"><a href="#">Huế</a></li>
+                </ul>
+            </div>
+            <div class="footer__contact">
+                <div class="footer_title">Liên hệ</div>
+                <ul class="contact_list">
+                    <li class="contact_item">
+                        <div class="contact_icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact_text">Dinh Cong-Ha Noi</div>
+                    </li>
+                    <li class="contact_item">
+                        <div class="contact_icon"><i class="fas fa-phone-square"></i></div>
+                        <div class="contact_text">+84 359 196 469</div>
+                    </li>
+                    <li class="contact_item">
+                        <div class="contact_icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact_text">doanvutung273@gmail.com</div>
+                    </li>
+                    <li class="contact_item">
+                        <div class="contact_icon"><i class="fas fa-globe-asia"></i></div>
+                        <div class="contact_text">www.viettravel.tk</div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+</body>
+<script src="~/styles/js/main_js.js"></script>
+<script>
+
+    $("#single_item").slick({
+        dots: true
+    });
+    $("#testimonials").slick({
+        dots: false
+    });
+</script>
+
+</html>

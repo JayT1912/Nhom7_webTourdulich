@@ -1,0 +1,74 @@
+@model Nhom7_webTourdulich.Models.NhanVien
+
+<!DOCTYPE html>
+<html lang="en">
+@{
+    Layout = "_LayoutAdmin";
+}
+
+<body>
+    <main>
+        <div class="container mt-5"></div>
+        <div class="card shadow-lg border-0">
+            <div class="card-header bg-primary text-white text-center">
+                <h2>Edit Employee</h2>
+            </div>
+            <div class="card-body">
+                <form asp-action="Edit" method="post" enctype="multipart/form-data">
+                    <input type="hidden" asp-for="MaNhanVien" />
+
+                    <!-- Name -->
+                    <div class="mb-4">
+                        <label asp-for="Ten" class="form-label fw-bold">Name</label>
+                        <input asp-for="Ten" class="form-control" />
+                        <span asp-validation-for="Ten" class="text-danger"></span>
+                    </div>
+
+                    <!-- Role -->
+                    <div class="mb-4">
+                        <label asp-for="MaChucVu" class="form-label fw-bold">Role</label>
+                        <select asp-for="MaChucVu" class="form-select">
+                            <option value="">Select a role</option>
+                            @foreach (var role in ViewBag.ChucVus)
+                            {
+                                <option value="@role.MaChucVu" selected="@(role.MaChucVu == Model.MaChucVu ? "selected" : null)">
+                                    @role.TenChucVu
+                                </option>
+                            }
+                        </select>
+                        <span asp-validation-for="MaChucVu" class="text-danger"></span>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="mb-4">
+                        <label asp-for="LinkFB" class="form-label fw-bold">Facebook</label>
+                        <input asp-for="LinkFB" class="form-control" placeholder="Enter Facebook Link" />
+                    </div>
+                    <div class="mb-4">
+                        <label asp-for="LinkZL" class="form-label fw-bold">Zalo</label>
+                        <input asp-for="LinkZL" class="form-control" placeholder="Enter Zalo Link" />
+                    </div>
+                    <div class="mb-4">
+                        <label asp-for="LinkIG" class="form-label fw-bold">Instagram</label>
+                        <input asp-for="LinkIG" class="form-control" placeholder="Enter Instagram Link" />
+                    </div>
+
+                    <!-- Image Upload -->
+                    <div class="mb-4">
+                        <label asp-for="HinhAnh" class="form-label fw-bold">Profile Picture</label>
+                        <input type="file" name="file" class="form-control" />
+                        <small class="text-muted">Upload a new profile picture if needed.</small>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-success px-4">Save Changes</button>
+                        <a asp-action="IndexAdmin" class="btn btn-secondary px-4">Quay Lại </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+    </main>
+</html>

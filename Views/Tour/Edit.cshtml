@@ -1,0 +1,203 @@
+@model Nhom7_webTourdulich.Models.Tour
+@{
+    ViewData["Title"] = "Edit Tour";
+    Layout = "_LayoutAdmin";
+}
+<div class="container mt-4">
+    <h1 class="text-center text-primary fw-bold">@ViewData["Title"]</h1>
+    <form asp-action="Edit" method="post" enctype="multipart/form-data" class="bg-white rounded shadow-sm p-4">
+        <input type="hidden" asp-for="MaTour" />
+
+        <div class="row">
+            <!-- Left Column -->
+            <div class="col-md-6">
+                <!-- Tour Name -->
+                <div class="form-group mb-3">
+                    <label asp-for="Ten" class="form-label fw-bold">Tour Name</label>
+                    <input asp-for="Ten" class="form-control border-primary shadow-sm" />
+                    <span asp-validation-for="Ten" class="text-danger"></span>
+                </div>
+
+                <!-- Tour Type -->
+                <div class="form-group mb-3">
+                    <label asp-for="MaLoaiTour" class="form-label fw-bold">Tour Type</label>
+                    <select asp-for="MaLoaiTour" class="form-control border-primary shadow-sm" asp-items="ViewBag.MaLoaiTour"></select>
+                    <span asp-validation-for="MaLoaiTour" class="text-danger"></span>
+                </div>
+
+                <!-- Tour Price -->
+                <div class="form-group mb-3">
+                    <label asp-for="MaGiaTour" class="form-label fw-bold">Tour Price</label>
+                    <select asp-for="MaGiaTour" class="form-control border-primary shadow-sm" asp-items="ViewBag.MaGiaTour"></select>
+                    <span asp-validation-for="MaGiaTour" class="text-danger"></span>
+                </div>
+
+                <!-- Destination -->
+                <div class="form-group mb-3">
+                    <label asp-for="MaDiemDen" class="form-label fw-bold">Destination</label>
+                    <select asp-for="MaDiemDen" class="form-control border-primary shadow-sm" asp-items="ViewBag.MaDiemDen"></select>
+                    <span asp-validation-for="MaDiemDen" class="text-danger"></span>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-md-6">
+                <!-- Duration -->
+                <div class="form-group mb-3">
+                    <label asp-for="SoNgay" class="form-label fw-bold">Duration (Days)</label>
+                    <input asp-for="SoNgay" class="form-control border-primary shadow-sm" type="number" />
+                    <span asp-validation-for="SoNgay" class="text-danger"></span>
+                </div>
+
+                <!-- Capacity -->
+                <div class="form-group mb-3">
+                    <label asp-for="SoLuongNguoi" class="form-label fw-bold">Capacity</label>
+                    <input asp-for="SoLuongNguoi" class="form-control border-primary shadow-sm" type="number" />
+                    <span asp-validation-for="SoLuongNguoi" class="text-danger"></span>
+                </div>
+
+                <!-- Description -->
+                <div class="form-group mb-3">
+                    <label asp-for="MoTa" class="form-label fw-bold">Description</label>
+                    <textarea asp-for="MoTa" class="form-control border-primary shadow-sm" rows="4"></textarea>
+                    <span asp-validation-for="MoTa" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Group Tour Section -->
+        <h5 class="text-center mt-4 fw-bold">Group Tour Information</h5>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group mb-3">
+                    <label for="NgayKhoiHanh" class="form-label fw-bold">Start Date</label>
+                    <input type="date" id="NgayKhoiHanh" name="NgayKhoiHanh" class="form-control border-primary shadow-sm" value="@Model.NhomTours?.FirstOrDefault()?.NgayKhoiHanh.ToString("yyyy-MM-dd")" />
+                </div>
+                <div class="form-group mb-3">
+                    <label for="NgayKetThuc" class="form-label fw-bold">End Date</label>
+                    <input type="date" id="NgayKetThuc" name="NgayKetThuc" class="form-control border-primary shadow-sm" value="@Model.NhomTours?.FirstOrDefault()?.NgayKetThuc.ToString("yyyy-MM-dd")" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group mb-3">
+                    <label for="DiemXuatPhat" class="form-label fw-bold">Departure Point</label>
+                    <input type="text" id="DiemXuatPhat" name="DiemXuatPhat" class="form-control border-primary shadow-sm" value="@Model.NhomTours?.FirstOrDefault()?.DiemXuatPhat" />
+                </div>
+                <div class="form-group mb-3">
+                    <label for="NoiDung" class="form-label fw-bold">Content</label>
+                    <textarea id="NoiDung" name="NoiDung" class="form-control border-primary shadow-sm" rows="4">@Model.NhomTours?.FirstOrDefault()?.NoiDung</textarea>
+                </div>
+            </div>
+        </div>
+
+        <!-- Current Images Section -->
+        <h5 class="text-center mt-4 fw-bold">Current Images</h5>
+        <div class="row">
+            @foreach (var image in Model.TourImages)
+            {
+                <div class="col-md-3 text-center mb-4">
+                    <img src="@image.HinhAnh" alt="Image" class="img-thumbnail shadow-sm" style="width: 150px; height: 150px;" />
+                    <form asp-action="DeleteImage" method="post" class="mt-2">
+                        <input type="hidden" name="id" value="@image.Id" />
+                        <button type="submit" class="btn btn-danger btn-sm" title="Delete Image">Delete</button>
+                    </form>
+                </div>
+            }
+        </div>
+
+        <!-- Add New Images Section -->
+        <h5 class="text-center mt-4 fw-bold">Add New Images</h5>
+        <div class="form-group mb-3">
+<input type="file" name="newImages" class="form-control border-primary shadow-sm" multiple />          
+  <small class="text-muted">Select one or more images to add.</small>
+        </div>
+
+        <!-- Buttons -->
+        <div class="text-center mt-4">
+            <button type="submit" class="btn btn-success px-4 shadow-sm">Save Changes</button>
+            <a href="@Url.Action("Index", "Tour")" class="btn btn-secondary px-4 ms-2 shadow-sm">Back to List</a>
+        </div>
+    </form>
+</div>
+
+<style>
+    /* General Styling */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+/* Container Styling */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+/* Form Styling */
+form {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Labels */
+.form-label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Inputs and Selects */
+.form-control, .form-select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.2);
+}
+
+/* Headings */
+h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Images */
+.img-thumbnail {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+</style>

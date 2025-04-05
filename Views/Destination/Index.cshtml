@@ -1,0 +1,41 @@
+@model IEnumerable<dynamic>
+@{
+  Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+<link rel="stylesheet" href="~/css/style.css"> <!-- Use the correct path -->
+<script src="~/js/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="~/js/main.js"></script>
+  
+    <!-- Include any additional CSS/JS as needed -->
+</head>
+
+<div class="container-xxl py-5 destination">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h6 class="section-title bg-white text-primary px-3">Điểm Đến</h6>
+            <h1 class="mb-4">Khám Phá Điểm Đến</h1>
+        </div>
+
+        <div class="row g-3">
+            @foreach (var destination in Model)
+            {
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <!-- Link to ToursByDestination action -->
+                    <a href="/Destination/ToursByDestination?destinationName=@destination.ThanhPho" class="position-relative d-block overflow-hidden shadow-sm rounded">
+                        <img class="img-fluid w-100" src="@destination.FirstTourImage" alt="@destination.ThanhPho" style="height: 200px; object-fit: cover;">
+                        <div class="position-absolute bottom-0 start-0 bg-dark text-white p-2 w-100">
+                            <small>@destination.ThanhPho</small>
+                        </div>
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+</div>

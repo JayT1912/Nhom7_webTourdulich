@@ -1,0 +1,180 @@
+@model Nhom7_webTourdulich.Models.Tour
+
+@{
+    Layout = "_LayoutAdmin";
+}
+
+<body style="background-color: #f8f9fa;">
+    <main>
+        <div class="container mt-5">
+            <div class="card shadow-lg border-0">
+                <div class="card-header bg-primary text-white text-center rounded-top">
+                    <h2 class="fw-bold">Tạo Tour Mới</h2>
+                </div>
+                <div class="card-body bg-light">
+                    <form asp-action="Create" method="post" enctype="multipart/form-data">
+                        <!-- Tour Name -->
+                        <div class="mb-4">
+                            <label asp-for="Ten" class="form-label fw-bold text-primary">Tên Tour</label>
+                            <input asp-for="Ten" class="form-control border-primary shadow-sm" placeholder="Nhập tên tour..." />
+                            <span asp-validation-for="Ten" class="text-danger"></span>
+                        </div>
+
+                        <!-- Tour Type Dropdown -->
+                        <div class="mb-4">
+                            <label asp-for="MaLoaiTour" class="form-label fw-bold text-primary">Loại Tour</label>
+                            <select asp-for="MaLoaiTour" class="form-select border-primary shadow-sm">
+                                <option value="">Chọn loại tour</option>
+                                @foreach (var item in ViewBag.MaLoaiTour)
+                                {
+                                    <option value="@item.Value">@item.Text</option>
+                                }
+                            </select>
+                            <span asp-validation-for="MaLoaiTour" class="text-danger"></span>
+                        </div>
+
+                        <!-- Tour Price Dropdown -->
+                        <div class="mb-4">
+                            <label asp-for="MaGiaTour" class="form-label fw-bold text-primary">Giá Tour</label>
+                            <select asp-for="MaGiaTour" class="form-select border-primary shadow-sm">
+                                <option value="">Chọn giá tour</option>
+                                @foreach (var item in ViewBag.MaGiaTour)
+                                {
+                                    <option value="@item.Value">@item.Text</option>
+                                }
+                            </select>
+                            <span asp-validation-for="MaGiaTour" class="text-danger"></span>
+                        </div>
+
+                        <!-- Destination Dropdown -->
+                        <div class="mb-4">
+                            <label asp-for="MaDiemDen" class="form-label fw-bold text-primary">Điểm Đến</label>
+                            <select asp-for="MaDiemDen" class="form-select border-primary shadow-sm">
+                                <option value="">Chọn điểm đến</option>
+                                @foreach (var item in ViewBag.MaDiemDen)
+                                {
+                                    <option value="@item.Value">@item.Text</option>
+                                }
+                            </select>
+                            <span asp-validation-for="MaDiemDen" class="text-danger"></span>
+                        </div>
+
+                        <!-- Group Tour Dates -->
+                        <div class="mb-4">
+                            <label for="NgayKhoiHanh" class="form-label fw-bold text-primary">Ngày Khởi Hành</label>
+                            <input type="date" id="NgayKhoiHanh" name="NgayKhoiHanh" class="form-control border-primary shadow-sm" required />
+                        </div>
+                        <div class="mb-4">
+                            <label for="NgayKetThuc" class="form-label fw-bold text-primary">Ngày Kết Thúc</label>
+                            <input type="date" id="NgayKetThuc" name="NgayKetThuc" class="form-control border-primary shadow-sm" required />
+                        </div>
+
+                        <!-- Description -->
+                        <div class="mb-4">
+                            <label asp-for="MoTa" class="form-label fw-bold text-primary">Mô Tả</label>
+                            <textarea asp-for="MoTa" class="form-control border-primary shadow-sm" rows="4" placeholder="Nhập mô tả chi tiết..."></textarea>
+                            <span asp-validation-for="MoTa" class="text-danger"></span>
+                        </div>
+
+                        <!-- Duration and Capacity -->
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <label asp-for="SoNgay" class="form-label fw-bold text-primary">Số Ngày</label>
+                                <input asp-for="SoNgay" class="form-control border-primary shadow-sm" type="number" placeholder="Nhập số ngày..." />
+                                <span asp-validation-for="SoNgay" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <label asp-for="SoLuongNguoi" class="form-label fw-bold text-primary">Số Lượng Người</label>
+                                <input asp-for="SoLuongNguoi" class="form-control border-primary shadow-sm" type="number" placeholder="Nhập số lượng người..." />
+                                <span asp-validation-for="SoLuongNguoi" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <!-- Image Upload -->
+                        <div class="mb-4">
+                            <label for="images" class="form-label fw-bold text-primary">Hình Ảnh</label>
+                            <input type="file" id="images" name="images" class="form-control border-primary shadow-sm" multiple />
+                            <small class="form-text text-muted">Chọn một hoặc nhiều hình ảnh để tải lên.</small>
+                        </div>
+
+                        <!-- Submit and Cancel Buttons -->
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn btn-primary btn-lg px-5 shadow-sm">Tạo Mới</button>
+                            <a asp-action="Index" class="btn btn-secondary btn-lg px-5 shadow-sm">Quay Lại</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+<style>
+    body {
+        background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+        font-family: 'Roboto', sans-serif;
+        color: #333;
+        margin: 0;
+    }
+    .container {
+        max-width: 750px;
+        margin: 30px auto;
+        padding: 20px;
+    }
+    .card {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        padding: 25px;
+    }
+    .card-header {
+        background: linear-gradient(90deg, #007bff, #0056b3);
+        color: #ffffff;
+        text-align: center;
+        padding: 15px;
+        font-size: 22px;
+        border-radius: 10px 10px 0 0;
+    }
+    .form-label {
+        font-weight: bold;
+        color: #007bff;
+        margin-bottom: 8px;
+    }
+    .form-control, .form-select {
+        padding: 10px;
+        border-radius: 6px;
+        border: 1px solid #ddd;
+        margin-bottom: 15px;
+        transition: border-color 0.3s ease;
+    }
+    .form-control:focus, .form-select:focus {
+        border-color: #007bff;
+        outline: none;
+    }
+    .btn {
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 6px;
+        color: #fff;
+        cursor: pointer;
+        margin-top: 15px;
+        transition: all 0.3s ease;
+    }
+    .btn-primary {
+        background-color: #007bff;
+    }
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+    .btn-secondary {
+        background-color: #6c757d;
+    }
+    .btn-secondary:hover {
+        background-color: #5a6268;
+    }
+    small {
+        font-size: 14px;
+        color: #6c757d;
+    }
+</style>

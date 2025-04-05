@@ -1,0 +1,18 @@
+@{
+    ViewData["Title"] = "Xóa hình ảnh";
+    Layout = "_LayoutAdmin";
+}
+
+<h2 class="text-center mt-4">Xóa hình ảnh</h2>
+
+<p>Bạn có chắc chắn muốn xóa hình ảnh này?</p>
+
+<div class="text-center">
+    <img src="@ViewBag.ImagePath" alt="Hình ảnh" class="img-thumbnail" style="width: 300px; height: auto;" />
+</div>
+
+<form asp-action="DeleteImage" method="post" class="text-center mt-3">
+    <input type="hidden" name="id" value="@ViewBag.ImageId" />
+    <button type="submit" class="btn btn-danger">Xóa</button>
+    <a asp-action="Edit" asp-route-id="@ViewBag.TourId" class="btn btn-secondary">Hủy</a>
+</form>

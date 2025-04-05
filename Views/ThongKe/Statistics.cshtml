@@ -1,0 +1,247 @@
+@model List<Nhom7_webTourdulich.Models.StatisticsViewModel>
+@using ClosedXML.Excel;
+
+@{
+    Layout = "_LayoutAdmin";
+}<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <main>
+        <div class="container mt-5">
+            <!-- Page Title -->
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <h2 class="text-primary">Thống Kê Hóa Đơn</h2>
+                </div>
+                <div class="col-md-6 text-right">
+                    <!-- Export Excel Button -->
+<a href="@Url.Action("ExportStatisticsToExcel", "ThongKe", new { 
+    timeType = ViewData["TimeType"], 
+    day = ViewData["Day"], 
+    month = ViewData["Month"], 
+    year = ViewData["Year"] 
+})" 
+class="btn btn-success">Xuất Excel</a>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Display Error or No Data Messages -->
+            @if (ViewBag.ErrorMessage != null)
+            {
+                <p class="text-danger text-center font-weight-bold">@ViewBag.ErrorMessage</p>
+            }
+            else if (ViewBag.Message != null)
+            {
+                <p class="text-danger text-center font-weight-bold">@ViewBag.Message</p>
+            }
+
+            <!-- Filter Form -->
+            <form method="get" action="/ThongKe/Statistics" class="mb-5 border p-4 rounded shadow-sm bg-light">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label for="timeType" class="font-weight-bold">Lọc Theo:</label>
+                                <select name="timeType" id="timeType" class="form-control">
+                                    <option value="">Chọn Loại</option>
+                                    <option value="day">Ngày</option>
+                                    <option value="month">Tháng</option>
+                                    <option value="year">Năm</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="day" class="font-weight-bold">Ngày:</label>
+                                <input type="number" name="day" id="day" class="form-control" placeholder="VD: 3" min="1" max="31">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="month" class="font-weight-bold">Tháng:</label>
+                                <input type="number" name="month" id="month" class="form-control" placeholder="VD: 3" min="1" max="12">
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <label for="year" class="font-weight-bold">Năm:</label>
+                                <input type="number" name="year" id="year" class="form-control" placeholder="VD: 2025" min="2000">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-right align-self-center">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-filter"></i> Lọc
+                        </button>
+                        <a href="/ThongKe/Statistics" class="btn btn-secondary ml-2">
+                            <i class="fas fa-redo"></i> Hiển Thị Tất Cả
+                        </a>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Data Table -->
+            @if (Model != null && Model.Any())
+            {
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped">
+                        <thead class="bg-primary text-white">
+                            <tr>
+                                <th>Ngày Lập</th>
+                                <th>Tên Khách Hàng</th>
+                                <th>Tên Tour</th>
+                                <th>Tổng Tiền</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.NgayLap</td>
+                                    <td>@item.TenKhachHang</td>
+                                    <td>@item.TenTour</td>
+                                    <td>@item.TongTien</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Display Total Revenue -->
+                <p class="text-right mt-4 font-weight-bold">
+                    <strong class="text-success">Tổng Doanh Thu:</strong> <span class="text-primary">@ViewBag.TotalRevenue</span>
+                </p>
+            }
+        </div>
+    </main>
+</body>
+<style>
+    /* General Page Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #343a40; /* Dark gray text for readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Page Title Styles */
+h2 {
+    font-weight: bold;
+    color: #007bff; /* Bootstrap primary blue */
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+/* Buttons */
+button, .btn {
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.btn i {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+/* Form Styles */
+form {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+    border: 1px solid #dee2e6;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #343a40;
+}
+
+/* Input Fields */
+input, select {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+}
+
+/* Table Styles */
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #dee2e6; /* Light gray border */
+}
+
+.table th {
+    background-color: #007bff;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f8f9fa; /* Alternating row background */
+}
+
+/.table-responsive {
+    overflow-x: auto; /* Horizontal scroll for smaller screens */
+}
+
+/* Total Revenue Styles */
+.text-success {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.text-primary {
+    font-weight: bold;
+}
+
+/* Error and Message Styles */
+p.text-danger, p.text-success {
+    font-size: 16px;
+    margin: 10px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+</style>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Website Travel - Tra Cứu Lịch Trình</title>
+
+    <style>
+        body.tra-cuu-body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f2f2f2;
+        }
+        .tra-cuu-container {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1.tra-cuu-heading {
+            text-align: center;
+            color: #3AA83A;
+        }
+        .tra-cuu-form {
+            margin-top: 20px;
+        }
+        .tra-cuu-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .tra-cuu-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .tra-cuu-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #3AA83A;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .tra-cuu-button:hover {
+            background-color: #349E34;
+        }
+    </style>
+</head>
+<body class="tra-cuu-body">
+    <div class="tra-cuu-container">
+        <h1 class="tra-cuu-heading">Tra Cứu Lịch Trình</h1>
+        <!-- Form where users manually input MaNhomTour -->
+        <form class="tra-cuu-form" action="/TraCuu/TraCuuLichTrinh" method="get">
+            <label class="tra-cuu-label" for="maNhomTour">Nhập mã nhóm tour:</label>
+            <input class="tra-cuu-input" type="number" id="maNhomTour" name="maNhomTour" placeholder="Nhập mã nhóm tour..." required />
+            <button class="tra-cuu-button" type="submit">Tra Cứu</button>
+        </form>
+    </div>
+</body>
+</html>

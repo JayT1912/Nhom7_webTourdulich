@@ -1,0 +1,219 @@
+@model IEnumerable<Nhom7_webTourdulich.Models.NhanVien>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/style.css">
+    <title>Meet Our Guide</title>
+</head>
+<body>
+    <!-- Team Section Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="section-title bg-white text-center text-primary px-3">Travel Guide</h6>
+                <h1 class="mb-5">Meet Our Guide</h1>
+            </div>
+
+            <!-- Team Cards -->
+            <div class="row g-4">
+                @foreach (var guide in Model)
+                {
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-item">
+                            <!-- Guide Image -->
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="@guide.HinhAnh" alt="@guide.Ten" />
+                            </div>
+
+                            <!-- Social Links -->
+                            <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                                @if (!string.IsNullOrEmpty(guide.LinkFB))
+                                {
+                                    <a class="btn btn-square mx-1" href="@guide.LinkFB" target="_blank">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                }
+                                @if (!string.IsNullOrEmpty(guide.LinkZL))
+                                {
+                                    <a class="btn btn-square mx-1" href="@guide.LinkZL" target="_blank">
+                                        <img src="/img/zalo1.png" alt="Zalo" style="width: 20px; height: 20px;" />
+                                    </a>
+                                }
+                                @if (!string.IsNullOrEmpty(guide.LinkIG))
+                                {
+                                    <a class="btn btn-square mx-1" href="@guide.LinkIG" target="_blank">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                }
+                            </div>
+
+                            <!-- Guide Details -->
+                            <div class="text-center p-4">
+                                <h5 class="mb-0">@guide.Ten</h5>
+                                <small>
+                                    @if (guide.MaChucVuNavigation != null)
+                                    {
+                                        @guide.MaChucVuNavigation.TenChucVu
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted">Chưa có chức vụ</span>
+                                    }
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+
+            <!-- Pagination -->
+            <nav class="mt-4">
+                <ul class="pagination justify-content-center">
+                    @for (var i = 1; i <= Math.Ceiling((double)ViewBag.TotalRecords / ViewBag.PageSize); i++)
+                    {
+                        <li class="page-item @(i == ViewBag.PageNumber ? "active" : "")">
+                            <a class="page-link" href="@Url.Action("Index", new { pageNumber = i, searchQuery = ViewBag.SearchQuery, searchPosition = ViewBag.SearchPosition })">@i</a>
+                        </li>
+                    }
+                
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- Team Section End -->
+</body>
+</html>
+
+
+<style>
+/* General Styling */
+body {
+    background-color: #f9f9f9; /* Light grey background */
+    font-family: 'Nunito', sans-serif; /* Modern font for text */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Section Styling */
+.container-xxl {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/.section-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Team Cards */
+.team-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-item:hover {
+    transform: translateY(-10px); /* Lift on hover */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+}
+
+.team-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /* Ensure image consistency */
+}
+
+.team-item h5 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 0 5px;
+    color: #007bff;
+}
+
+.team-item small {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Social Buttons */
+.btn-square {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-square:hover {
+    transform: scale(1.1);
+    background-color: #0056b3;
+}
+
+/* Pagination */
+.pagination {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination .page-item {
+    margin: 0 5px;
+}
+
+.pagination .page-link {
+    padding: 8px 12px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #007bff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination .page-link:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.pagination .active .page-link {
+    background-color: #0056b3;
+    color: white;
+    border-color: #0056b3;
+}
+
+/* Responsive Design */
+media (max-width: 768px) {
+    .team-item img {
+        height: 250px; /* Adjust image size for tablets */
+    }
+}
+
+media (max-width: 576px) {
+    .team-item img {
+        height: 200px; /* Adjust image size for mobile */
+    }
+}
+
+</style>
